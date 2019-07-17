@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript基本知识-02 | Sumind&#39;s Blog</title>
+    <meta name="description" content="做一个有灵魂的前端工程师">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.75dd9f78.css" as="style"><link rel="preload" href="/assets/js/app.a9f6d8ec.js" as="script"><link rel="preload" href="/assets/js/4.f605a52d.js" as="script"><link rel="preload" href="/assets/js/1.a2510d10.js" as="script"><link rel="preload" href="/assets/js/37.098262ce.js" as="script"><link rel="prefetch" href="/assets/js/10.96e33a09.js"><link rel="prefetch" href="/assets/js/11.ce91667a.js"><link rel="prefetch" href="/assets/js/12.3fed3056.js"><link rel="prefetch" href="/assets/js/13.41117cae.js"><link rel="prefetch" href="/assets/js/14.0a836303.js"><link rel="prefetch" href="/assets/js/15.c7a70042.js"><link rel="prefetch" href="/assets/js/16.eda894ef.js"><link rel="prefetch" href="/assets/js/17.9972567d.js"><link rel="prefetch" href="/assets/js/18.5c2087d9.js"><link rel="prefetch" href="/assets/js/19.9e5909ec.js"><link rel="prefetch" href="/assets/js/20.81cf4463.js"><link rel="prefetch" href="/assets/js/21.b1896877.js"><link rel="prefetch" href="/assets/js/22.3058e867.js"><link rel="prefetch" href="/assets/js/23.76b75888.js"><link rel="prefetch" href="/assets/js/24.cb2b6224.js"><link rel="prefetch" href="/assets/js/25.66f6d5cc.js"><link rel="prefetch" href="/assets/js/26.d3ba5339.js"><link rel="prefetch" href="/assets/js/27.1b1cd18a.js"><link rel="prefetch" href="/assets/js/28.d0ca9393.js"><link rel="prefetch" href="/assets/js/29.a10472bb.js"><link rel="prefetch" href="/assets/js/30.13388d66.js"><link rel="prefetch" href="/assets/js/31.cd6ba917.js"><link rel="prefetch" href="/assets/js/32.097ed36d.js"><link rel="prefetch" href="/assets/js/33.e6ea0697.js"><link rel="prefetch" href="/assets/js/34.896ec5ef.js"><link rel="prefetch" href="/assets/js/35.9bd942f7.js"><link rel="prefetch" href="/assets/js/36.2b774afe.js"><link rel="prefetch" href="/assets/js/38.6a5cbac5.js"><link rel="prefetch" href="/assets/js/39.03cc91d2.js"><link rel="prefetch" href="/assets/js/40.8d0a7377.js"><link rel="prefetch" href="/assets/js/41.dea6138e.js"><link rel="prefetch" href="/assets/js/42.555d373d.js"><link rel="prefetch" href="/assets/js/43.b47eb251.js"><link rel="prefetch" href="/assets/js/44.1ffd7b5b.js"><link rel="prefetch" href="/assets/js/45.cfb5da00.js"><link rel="prefetch" href="/assets/js/46.a56b9b85.js"><link rel="prefetch" href="/assets/js/47.4f781dff.js"><link rel="prefetch" href="/assets/js/48.4f542143.js"><link rel="prefetch" href="/assets/js/49.5c2eb801.js"><link rel="prefetch" href="/assets/js/5.e7fbaf2f.js"><link rel="prefetch" href="/assets/js/50.4fb88d7e.js"><link rel="prefetch" href="/assets/js/51.9028fef6.js"><link rel="prefetch" href="/assets/js/52.abb81def.js"><link rel="prefetch" href="/assets/js/6.896bf5be.js"><link rel="prefetch" href="/assets/js/7.b5260bec.js"><link rel="prefetch" href="/assets/js/8.5b3b73d8.js"><link rel="prefetch" href="/assets/js/9.eba5c3f6.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.2553b2f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.75dd9f78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/01.jpg" alt="Sumind's Blog" class="logo"> <span class="site-name">Sumind's Blog</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">是否开启夜览模式？</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript基本知识-02</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#赋值运算符" class="sidebar-link">赋值运算符</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#一元运算符" class="sidebar-link">一元运算符</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#测试练习" class="sidebar-link">测试练习</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#比较运算符" class="sidebar-link">比较运算符</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#逻辑运算符" class="sidebar-link">逻辑运算符</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#运算符优先级（了解）" class="sidebar-link">运算符优先级（了解）</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#isnan" class="sidebar-link">isNaN()</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#条件判断（分支）" class="sidebar-link">条件判断（分支）</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#语法" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#执行过程" class="sidebar-link">执行过程</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#测试练习-2" class="sidebar-link">测试练习</a></li></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#三元运算" class="sidebar-link">三元运算</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#语法-2" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#执行过程-2" class="sidebar-link">执行过程</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#测试练习-使用三元运算的方式解决" class="sidebar-link">测试练习(使用三元运算的方式解决)</a></li></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#switch语句" class="sidebar-link">switch语句</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#语法-3" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#执行过程-3" class="sidebar-link">执行过程</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#测试练习-3" class="sidebar-link">测试练习</a></li></ul></li><li><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#循环" class="sidebar-link">循环</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#while循环" class="sidebar-link">while循环</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#语法-4" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#执行过程-4" class="sidebar-link">执行过程</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#do-while-循环" class="sidebar-link">do .. while 循环</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#语法-5" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#执行过程-5" class="sidebar-link">执行过程</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#for-循环" class="sidebar-link">for 循环</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#语法-6" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#执行过程-6" class="sidebar-link">执行过程</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#continue和break" class="sidebar-link">continue和break</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#continue语句执行及特点" class="sidebar-link">continue语句执行及特点</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#break语句执行及特点" class="sidebar-link">break语句执行及特点</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%8602.html#" class="sidebar-link"></a></li></ul></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>JavaScript基本知识-02</h1> <hr> <div data-v-0b496ca7><i class="iconfont reco-account" data-v-0b496ca7><span data-v-0b496ca7>Sumind</span></i> <i class="iconfont reco-date" data-v-0b496ca7><span data-v-0b496ca7>2017-6-17</span></i> <!----> <!----></div></div> <div class="content__default"><h5 id="javascript基本知识-02"><a href="#javascript基本知识-02" aria-hidden="true" class="header-anchor">#</a> JavaScript基本知识-02</h5> <p>JavaScript入门常识</p> <h1 id="_02-javascript基础"><a href="#_02-javascript基础" aria-hidden="true" class="header-anchor">#</a> 02-JavaScript基础</h1> <h2 id="赋值运算符"><a href="#赋值运算符" aria-hidden="true" class="header-anchor">#</a> 赋值运算符</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">+=</span> <span class="token operator">|</span>  <span class="token operator">-=</span>   <span class="token operator">|</span>  <span class="token operator">*=</span>  <span class="token operator">|</span>  <span class="token operator">/=</span>  <span class="token operator">|</span>   <span class="token operator">%=</span>    <span class="token operator">|</span>   <span class="token operator">=</span> 
+
+<span class="token keyword">var</span>  a <span class="token operator">+=</span> b <span class="token punctuation">;</span>    <span class="token operator">===</span><span class="token operator">==</span><span class="token operator">&gt;</span> 等价于        a <span class="token operator">=</span> a<span class="token operator">+</span>b<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="一元运算符"><a href="#一元运算符" aria-hidden="true" class="header-anchor">#</a> 一元运算符</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> <span class="token number">1.</span>   <span class="token operator">++</span>  和  <span class="token operator">--</span> 
+
+ <span class="token number">2.</span> <span class="token operator">++</span> 运算
+ 	 <span class="token operator">++</span>a       在变量a的基础上加<span class="token number">1</span>
+     a<span class="token operator">++</span>	   在变量a的基础上加<span class="token number">1</span>
+     
+     
+    ✔ 如果将 a<span class="token operator">++</span> 或者 <span class="token operator">++</span>a赋值给一个变量的时候，这个变量的值有区别
+    
+       ◆ 如果将 a<span class="token operator">++</span> 赋值一个变量，那么先将a原来的值赋值给新的变量，然后自己再加<span class="token number">1</span>（先赋值再计算）
+       ◆ 如果将 <span class="token operator">++</span>a 赋值一个变量，那么先进行加<span class="token number">1</span>计算，然后把计算后的结果赋值给新的变量
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="测试练习"><a href="#测试练习" aria-hidden="true" class="header-anchor">#</a> 测试练习</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token number">1.</span>
+    <span class="token keyword">var</span>    a<span class="token punctuation">;</span>
+    <span class="token keyword">var</span>    b<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">;</span>
+    a<span class="token operator">=</span><span class="token operator">++</span>b<span class="token punctuation">;</span>
+    请问：a的值是多少，b的值是多少。  <span class="token number">7</span>   <span class="token number">7</span>
+    a<span class="token operator">=</span>b<span class="token operator">++</span><span class="token punctuation">;</span>
+    请问：a的值是多少，b的值是多少。  <span class="token number">7</span>   <span class="token number">8</span>
+<span class="token number">2.</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token operator">++</span>a <span class="token operator">+</span> <span class="token operator">++</span>a<span class="token punctuation">;</span>   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//  </span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token keyword">var</span> b <span class="token operator">=</span> a<span class="token operator">++</span> <span class="token operator">+</span> <span class="token operator">++</span>a<span class="token punctuation">;</span>   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token keyword">var</span> b <span class="token operator">=</span> a<span class="token operator">++</span> <span class="token operator">+</span> a<span class="token operator">++</span><span class="token punctuation">;</span>   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token operator">++</span>a <span class="token operator">+</span> a<span class="token operator">++</span><span class="token punctuation">;</span>   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="比较运算符"><a href="#比较运算符" aria-hidden="true" class="header-anchor">#</a> 比较运算符</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token number">1.</span>   <span class="token operator">&gt;</span>  
+    
+<span class="token number">2.</span>   <span class="token operator">&lt;</span>
+    
+<span class="token number">3.</span>   <span class="token operator">&gt;=</span>     大于 或者 等于，只要有一个满足即可
+    
+<span class="token number">4.</span>   <span class="token operator">&lt;=</span>     小于 或者 等于，只要满足一个即可
+
+<span class="token number">5.</span>  <span class="token operator">==</span>      只用来比较变量中的值是否相等，不考虑数据类型
+    
+<span class="token number">6.</span>  <span class="token operator">===</span>     用来判断值和数据类型必须同时相等
+    
+<span class="token number">7.</span>  <span class="token operator">!=</span>	    判断值是否不相等，不考虑数据类型
+ 
+<span class="token number">8.</span>  <span class="token operator">!==</span>     判断值和数据类型
+    
+    
+☞ 总结：
+	  ✔ 通过比较运算符得到的结果只有两个结果，一个是正确的，一个是错误的
+      ✔ 通过比较运算符得到的结果 只有 <span class="token boolean">true</span><span class="token punctuation">[</span>正确<span class="token punctuation">]</span> 和 <span class="token boolean">false</span><span class="token punctuation">[</span>错误<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="逻辑运算符"><a href="#逻辑运算符" aria-hidden="true" class="header-anchor">#</a> 逻辑运算符</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> <span class="token number">1.</span>   <span class="token operator">||</span>  或： 条件只要有一个满足即可
+      总结：
+      	  <span class="token number">1.</span> 如果条件中有一个结为<span class="token boolean">true</span><span class="token punctuation">(</span>代表有一个条件满足了<span class="token punctuation">)</span>，那么通过或运算后最后的结果为<span class="token boolean">true</span>
+          <span class="token number">2.</span> 如果条件中结果都不满足，那么通过或运算后结果为<span class="token boolean">false</span>
+     
+ <span class="token number">2.</span>   <span class="token operator">&amp;&amp;</span>  且： 要求所有的条件都必须满足才可以
+ 	  总结：
+	      <span class="token number">1.</span> 如果条件都为真（<span class="token boolean">true</span>），那么通过且运算后最后的结果也是真（<span class="token boolean">true</span>）
+          <span class="token number">2.</span> 如果条件中自少有一个条件不满足（<span class="token boolean">false</span>），那么通过且运算后的结果为<span class="token boolean">false</span>
+     
+ <span class="token number">3.</span>   <span class="token operator">!</span> 非（取反） <span class="token punctuation">:</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="运算符优先级（了解）"><a href="#运算符优先级（了解）" aria-hidden="true" class="header-anchor">#</a> 运算符优先级（了解）</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>优先级从高到底
+	<span class="token number">1.</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>  优先级最高   
+	<span class="token number">2.</span> 一元运算符  <span class="token operator">++</span>   <span class="token operator">--</span>   <span class="token operator">!</span>
+	<span class="token number">3.</span> 算数运算符  先<span class="token operator">*</span>  <span class="token operator">/</span>  <span class="token operator">%</span>   后 <span class="token operator">+</span>   <span class="token operator">-</span>
+	<span class="token number">4.</span> 关系运算符  <span class="token operator">&gt;</span>   <span class="token operator">&gt;=</span>   <span class="token operator">&lt;</span>   <span class="token operator">&lt;=</span>
+	<span class="token number">5.</span> 相等运算符   <span class="token operator">==</span>   <span class="token operator">!=</span>    <span class="token operator">===</span>    <span class="token operator">!==</span>
+	<span class="token number">6.</span> 逻辑运算符 先<span class="token operator">&amp;&amp;</span>   后<span class="token operator">||</span>
+	<span class="token number">7.</span> 赋值运算符
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="isnan"><a href="#isnan" aria-hidden="true" class="header-anchor">#</a> isNaN()</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> ☞  判断一个变量的值 是不是数字
+ 
+ 	   <span class="token keyword">var</span> n1 <span class="token operator">=</span> <span class="token string">'123'</span><span class="token punctuation">;</span>
+		<span class="token comment">//判断n1是不是一个数字</span>
+		<span class="token keyword">var</span> res <span class="token operator">=</span> <span class="token function">isNaN</span><span class="token punctuation">(</span>n1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token comment">// isNaN 返回的是一个 true， 不是数字</span>
+		<span class="token comment">// isNaN 返回的是一个false , 是一个数字 </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="条件判断（分支）"><a href="#条件判断（分支）" aria-hidden="true" class="header-anchor">#</a> 条件判断（分支）</h2> <blockquote><h3 id="语法"><a href="#语法" aria-hidden="true" class="header-anchor">#</a> 语法</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//单条件表达式</span>
+☞   <span class="token keyword">if</span> <span class="token punctuation">(</span> 条件表达式【布尔类型的结果】 <span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+       
+   	    逻辑代码。。。
+       
+     <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+       
+         逻辑代码。。。
+     <span class="token punctuation">}</span> 
+
+<span class="token comment">//多条件表达式</span>
+☞  <span class="token keyword">if</span> <span class="token punctuation">(</span> 条件表达式 <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+	<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span> 条件表达式 <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><blockquote><h3 id="执行过程"><a href="#执行过程" aria-hidden="true" class="header-anchor">#</a> 执行过程</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token number">1.</span> 单条件条件判断代码执行过程：
+	 ✔ 先进行表达式结果判断 
+     ✔ 如果结果是<span class="token boolean">true</span><span class="token punctuation">,</span> 程序只会执行<span class="token keyword">if</span>中的语句，不会执行<span class="token keyword">else</span>中的语句
+	 ✔ 如果结果是<span class="token boolean">false</span>， 程序只会执行<span class="token keyword">else</span>中的语句，不会执行<span class="token keyword">if</span>中的语句
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><blockquote><h3 id="测试练习-2"><a href="#测试练习-2" aria-hidden="true" class="header-anchor">#</a> 测试练习</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>  <span class="token number">1.</span> 接收用户输入两个数字，求两个数的最大数。【排除非法输入】
+
+  <span class="token number">2.</span> 接收用户输入一个数字，判断一个数是偶数还是奇数【将非法输入考虑进去】
+  
+  <span class="token number">3.</span> 当点击确定，弹出消息提示“您已退出” 当点击取消  弹出消息“您已取消退出”
+  
+作业：
+
+   <span class="token number">1.</span> 判断一个年份是闰年还是平年
+      闰年：能被<span class="token number">4</span>整除，但不能被<span class="token number">100</span>整除的年份 或者 能被<span class="token number">400</span>整除的年份
+
+   <span class="token number">2.</span> 依据一个人的年龄判断是否成年（大于<span class="token number">18</span>岁）
+
+   <span class="token number">3.</span> 一个加油站为了鼓励车主多加油，所以加的多有优惠。
+      <span class="token number">92</span>号汽油，每升<span class="token number">6</span>元；如果大于<span class="token number">20</span>升，那么超出部分每升<span class="token number">5.9</span>；
+      <span class="token number">95</span>号汽油，每升<span class="token number">7</span>元；如果大于<span class="token number">30</span>升，那么超出部分每升<span class="token number">6.95</span>
+      编写<span class="token constant">JS</span>程序，用户输入自己的汽油编号，然后输入自己加多少升，弹出价格。
+      
+   <span class="token number">4.</span>  收先接收用户输入的用户名，判断该用户名是否是admin<span class="token punctuation">,</span>如果不是直接程序终止，如果是那么再次提示让用户输入密码<span class="token punctuation">,</span>如果密码是<span class="token number">88888</span><span class="token punctuation">,</span>那么提示登录成功，否则提示登录失败。
+
+    <span class="token number">5.</span>分数转换，把百分制转换成<span class="token constant">ABCDE</span>   <span class="token operator">&lt;</span><span class="token number">60</span>  <span class="token constant">E</span>  <span class="token number">60</span><span class="token operator">-</span><span class="token number">70</span> <span class="token constant">D</span>  <span class="token number">70</span><span class="token operator">-</span><span class="token number">80</span> <span class="token constant">C</span>  <span class="token number">80</span><span class="token operator">-</span><span class="token number">90</span> <span class="token constant">B</span>  <span class="token number">90</span> <span class="token operator">-</span> <span class="token number">100</span> <span class="token constant">A</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="三元运算"><a href="#三元运算" aria-hidden="true" class="header-anchor">#</a> 三元运算</h2> <blockquote><h3 id="语法-2"><a href="#语法-2" aria-hidden="true" class="header-anchor">#</a> 语法</h3></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>   表达式 ?  结果1 ：  结果2 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><h3 id="执行过程-2"><a href="#执行过程-2" aria-hidden="true" class="header-anchor">#</a> 执行过程</h3></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>  1. 
+  	✔ 先判断表达式的结果是 true还是false
+  	✔ 如果结果是true ,那么代码执行 结果1
+  	✔ 如果结果是false，那么代码执行 结果2
+  	
+  	？  ====&gt; 相当与条件判断中的if
+  	：  =====&gt; 相当于else
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h3 id="测试练习-使用三元运算的方式解决"><a href="#测试练习-使用三元运算的方式解决" aria-hidden="true" class="header-anchor">#</a> 测试练习(使用三元运算的方式解决)</h3></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>1:接收用户输入的数字，判断是奇数还是偶数
+2:当点击确定，弹出消息提示“您已退出”  当点击取消  弹出消息“您已取消退出”
+3:从两个数中找最大值
+4:从三个数字中找最大值
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="switch语句"><a href="#switch语句" aria-hidden="true" class="header-anchor">#</a> switch语句</h2> <blockquote><h3 id="语法-3"><a href="#语法-3" aria-hidden="true" class="header-anchor">#</a> 语法</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">switch</span> <span class="token punctuation">(</span> 变量 <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span>  值<span class="token number">1</span><span class="token punctuation">:</span>
+        代码语句<span class="token punctuation">.</span><span class="token punctuation">.</span>
+     <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span>  值<span class="token number">2</span><span class="token punctuation">:</span>
+        代码语句<span class="token operator">...</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>    
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><blockquote><h3 id="执行过程-3"><a href="#执行过程-3" aria-hidden="true" class="header-anchor">#</a> 执行过程</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> 总结：
+	 <span class="token number">1.</span> 如果在程序中要表示一个范围，那么推荐使用条件判断
+     <span class="token number">2.</span> 如果程序中表示的是一个具体的值， 可以用<span class="token keyword">switch</span>语句
+
+  注意：
+	<span class="token comment">//1. switch 后面的变量数据类型必须和 case 后面的值数据类型保持一至</span>
+	<span class="token comment">//2. break语句必须加</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h3 id="测试练习-3"><a href="#测试练习-3" aria-hidden="true" class="header-anchor">#</a> 测试练习</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>☞ 根据用户输入月份，显示对应的季节（例如：<span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span>为春季）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="循环"><a href="#循环" aria-hidden="true" class="header-anchor">#</a> 循环</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> ☞  循环：  重复的再做一件事件
+ 
+ 	✔ 当条件满足的时候，执行循环代码
+    ✔ 条件不满足的时候，不会执行循环代码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li><h3 id="while循环"><a href="#while循环" aria-hidden="true" class="header-anchor">#</a> while循环</h3></li></ul> <blockquote><h3 id="语法-4"><a href="#语法-4" aria-hidden="true" class="header-anchor">#</a> 语法</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">while</span><span class="token punctuation">(</span>条件表达式<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    代码（循环体）
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><h3 id="执行过程-4"><a href="#执行过程-4" aria-hidden="true" class="header-anchor">#</a> 执行过程</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> <span class="token number">1.</span>  先条件判断结构是 <span class="token boolean">true</span> 还是 <span class="token boolean">false</span>
+ <span class="token number">2.</span>  如果是<span class="token boolean">true</span>，那么程序会一直执行循环体中的代码
+ <span class="token number">3.</span>  如果条件为<span class="token boolean">false</span>，那么程序会立即跳出循环体代码结束执行
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><h3 id="do-while-循环"><a href="#do-while-循环" aria-hidden="true" class="header-anchor">#</a> do .. while 循环</h3></li></ul> <blockquote><h3 id="语法-5"><a href="#语法-5" aria-hidden="true" class="header-anchor">#</a> 语法</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">do</span> <span class="token punctuation">{</span>
+    循环体代码
+<span class="token punctuation">}</span><span class="token keyword">while</span><span class="token punctuation">(</span>条件表达式<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><h3 id="执行过程-5"><a href="#执行过程-5" aria-hidden="true" class="header-anchor">#</a> 执行过程</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> ☞  先执行循环体代码
+ ☞ 然后判断条件
+ ☞ 如果条件为<span class="token boolean">true</span>，继续执行循环体代码
+ ☞ 如果条件为<span class="token boolean">false</span><span class="token punctuation">,</span>循环体代码立即结束，跳出循环
+
+
+ 与<span class="token keyword">while</span>循环的区别：
+ 	 <span class="token number">1.</span> 如果条件不满足，<span class="token keyword">do</span> <span class="token keyword">while</span>循环会比<span class="token keyword">while</span>循环多执行一次
+     <span class="token number">2.</span> 如果条件满足，<span class="token keyword">do</span> <span class="token keyword">while</span>循环和<span class="token keyword">while</span>循环执行的次数是一样一样的。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="for-循环"><a href="#for-循环" aria-hidden="true" class="header-anchor">#</a> for 循环</h3> <blockquote><h3 id="语法-6"><a href="#语法-6" aria-hidden="true" class="header-anchor">#</a> 语法</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">for</span><span class="token punctuation">(</span>变量初始化<span class="token punctuation">;</span> 条件 <span class="token punctuation">;</span> 变量自增<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><h3 id="执行过程-6"><a href="#执行过程-6" aria-hidden="true" class="header-anchor">#</a> 执行过程</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><h3 id="continue和break"><a href="#continue和break" aria-hidden="true" class="header-anchor">#</a> continue和break</h3></li></ul> <blockquote><h3 id="continue语句执行及特点"><a href="#continue语句执行及特点" aria-hidden="true" class="header-anchor">#</a> continue语句执行及特点</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> ☞ 立即跳出本次循环，继续下一次循环（本次循环体 continu 之后的 代码 就都少执行这一次）
+ 
+ ☞ 通俗理解： 吃<span class="token number">5</span>个包子，第<span class="token number">3</span>个掉地下了，就扔掉第<span class="token number">3</span>个，继续吃第<span class="token number">4</span>个第<span class="token number">5</span>个包子。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><h3 id="break语句执行及特点"><a href="#break语句执行及特点" aria-hidden="true" class="header-anchor">#</a> break语句执行及特点</h3></blockquote> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> ☞  理解跳出整个循环（循环结束），开始执行 循环后面的代码
+ ☞  通俗理解：  吃<span class="token number">5</span>个包子，吃到第<span class="token number">3</span>个吃饱了，就不再吃后面的包子。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id=""><a href="#" aria-hidden="true" class="header-anchor">#</a></h3></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">7/18/2019, 2:26:44 AM</span></div></footer> <!----> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a9f6d8ec.js" defer></script><script src="/assets/js/4.f605a52d.js" defer></script><script src="/assets/js/1.a2510d10.js" defer></script><script src="/assets/js/37.098262ce.js" defer></script>
+  </body>
+</html>

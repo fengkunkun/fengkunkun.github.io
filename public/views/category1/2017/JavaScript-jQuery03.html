@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript-jQuery-03 | Sumind&#39;s Blog</title>
+    <meta name="description" content="做一个有灵魂的前端工程师">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.75dd9f78.css" as="style"><link rel="preload" href="/assets/js/app.a9f6d8ec.js" as="script"><link rel="preload" href="/assets/js/4.f605a52d.js" as="script"><link rel="preload" href="/assets/js/1.a2510d10.js" as="script"><link rel="preload" href="/assets/js/34.896ec5ef.js" as="script"><link rel="prefetch" href="/assets/js/10.96e33a09.js"><link rel="prefetch" href="/assets/js/11.ce91667a.js"><link rel="prefetch" href="/assets/js/12.3fed3056.js"><link rel="prefetch" href="/assets/js/13.41117cae.js"><link rel="prefetch" href="/assets/js/14.0a836303.js"><link rel="prefetch" href="/assets/js/15.c7a70042.js"><link rel="prefetch" href="/assets/js/16.eda894ef.js"><link rel="prefetch" href="/assets/js/17.9972567d.js"><link rel="prefetch" href="/assets/js/18.5c2087d9.js"><link rel="prefetch" href="/assets/js/19.9e5909ec.js"><link rel="prefetch" href="/assets/js/20.81cf4463.js"><link rel="prefetch" href="/assets/js/21.b1896877.js"><link rel="prefetch" href="/assets/js/22.3058e867.js"><link rel="prefetch" href="/assets/js/23.76b75888.js"><link rel="prefetch" href="/assets/js/24.cb2b6224.js"><link rel="prefetch" href="/assets/js/25.66f6d5cc.js"><link rel="prefetch" href="/assets/js/26.d3ba5339.js"><link rel="prefetch" href="/assets/js/27.1b1cd18a.js"><link rel="prefetch" href="/assets/js/28.d0ca9393.js"><link rel="prefetch" href="/assets/js/29.a10472bb.js"><link rel="prefetch" href="/assets/js/30.13388d66.js"><link rel="prefetch" href="/assets/js/31.cd6ba917.js"><link rel="prefetch" href="/assets/js/32.097ed36d.js"><link rel="prefetch" href="/assets/js/33.e6ea0697.js"><link rel="prefetch" href="/assets/js/35.9bd942f7.js"><link rel="prefetch" href="/assets/js/36.2b774afe.js"><link rel="prefetch" href="/assets/js/37.098262ce.js"><link rel="prefetch" href="/assets/js/38.6a5cbac5.js"><link rel="prefetch" href="/assets/js/39.03cc91d2.js"><link rel="prefetch" href="/assets/js/40.8d0a7377.js"><link rel="prefetch" href="/assets/js/41.dea6138e.js"><link rel="prefetch" href="/assets/js/42.555d373d.js"><link rel="prefetch" href="/assets/js/43.b47eb251.js"><link rel="prefetch" href="/assets/js/44.1ffd7b5b.js"><link rel="prefetch" href="/assets/js/45.cfb5da00.js"><link rel="prefetch" href="/assets/js/46.a56b9b85.js"><link rel="prefetch" href="/assets/js/47.4f781dff.js"><link rel="prefetch" href="/assets/js/48.4f542143.js"><link rel="prefetch" href="/assets/js/49.5c2eb801.js"><link rel="prefetch" href="/assets/js/5.e7fbaf2f.js"><link rel="prefetch" href="/assets/js/50.4fb88d7e.js"><link rel="prefetch" href="/assets/js/51.9028fef6.js"><link rel="prefetch" href="/assets/js/52.abb81def.js"><link rel="prefetch" href="/assets/js/6.896bf5be.js"><link rel="prefetch" href="/assets/js/7.b5260bec.js"><link rel="prefetch" href="/assets/js/8.5b3b73d8.js"><link rel="prefetch" href="/assets/js/9.eba5c3f6.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.2553b2f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.75dd9f78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/01.jpg" alt="Sumind's Blog" class="logo"> <span class="site-name">Sumind's Blog</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">是否开启夜览模式？</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript-jQuery-03</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/category1/2017/JavaScript-jQuery03.html#jquery-元素操作" class="sidebar-link">jQuery 元素操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#遍历元素" class="sidebar-link">遍历元素</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#创建元素" class="sidebar-link">创建元素</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#添加元素" class="sidebar-link">添加元素</a></li></ul></li><li><a href="/views/category1/2017/JavaScript-jQuery03.html#jquery-尺寸、位置操作" class="sidebar-link">jQuery 尺寸、位置操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#jquery-尺寸" class="sidebar-link">jQuery 尺寸</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#jquery-位置" class="sidebar-link">jQuery 位置</a></li></ul></li><li><a href="/views/category1/2017/JavaScript-jQuery03.html#jquery-事件" class="sidebar-link">jQuery 事件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#jquery事件注册" class="sidebar-link">jQuery事件注册**</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#事件处理-on-绑定事件" class="sidebar-link">事件处理 on() 绑定事件</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#案例：发布微博案例" class="sidebar-link">案例：发布微博案例</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#事件处理-off-解绑事件" class="sidebar-link">事件处理 off() 解绑事件</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-jQuery03.html#自动触发事件trigger" class="sidebar-link">自动触发事件trigger()</a></li></ul></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>JavaScript-jQuery-03</h1> <hr> <div data-v-0b496ca7><i class="iconfont reco-account" data-v-0b496ca7><span data-v-0b496ca7>Sumind</span></i> <i class="iconfont reco-date" data-v-0b496ca7><span data-v-0b496ca7>2017-7-3</span></i> <!----> <!----></div></div> <div class="content__default"><h5 id="javascript-jquery-03"><a href="#javascript-jquery-03" aria-hidden="true" class="header-anchor">#</a> JavaScript-jQuery-03</h5> <p>JavaScript-jQuery</p> <h2 id="jquery-元素操作"><a href="#jquery-元素操作" aria-hidden="true" class="header-anchor">#</a> <strong>jQuery</strong> <strong>元素操作</strong></h2> <blockquote><p>主要是遍历、创建、添加、删除元素操作。</p></blockquote> <h3 id="遍历元素"><a href="#遍历元素" aria-hidden="true" class="header-anchor">#</a> <strong>遍历元素</strong></h3> <p>jQuery 隐式迭代是对同一类元素做了同样的操作。如果想要给同一类元素做不同操作，就需要用到遍历。</p> <blockquote><p>语法1：$(&quot;div&quot;).each(function(index, domEle) { xxx; }）</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>\1. each() 方法遍历匹配的每一个元素。主要用DOM处理。 each 每一个
+
+\2. 里面的回调函数有2个参数：  index 是每个元素的索引号;  demEle 是每个DOM元素对象，不是jquery对象
+
+\3. 所以要想使用jquery方法，需要给这个dom元素转换为jquery对象  $(domEle)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>语法2：$.each(object，function(index, element){ xxx;}）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>\1. $.each()方法可用于遍历任何对象。主要用于数据处理，比如数组，对象
+
+\2. 里面的函数有2个参数：  index 是每个元素的索引号;  element  遍历内容
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>**案例：购物车案例<strong><strong>模块</strong></strong>-**<strong>计算总计和总额</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>①核心思路：把所有文本框里面的值相加就是总计数量。总额同理
+
+②文本框里面的值不相同，如果想要相加需要用到each遍历。声明一个变量，相加即可
+
+③点击+号-号，会改变总计和总额，如果用户修改了文本框里面的值同样会改变总计和总额
+
+④因此可以封装一个函数求总计和总额的， 以上2个操作调用这个函数即可。
+
+⑤注意1： 总计是文本框里面的值相加用 val()     总额是普通元素的内容用text()  
+
+⑥要注意普通元素里面的内容要去掉￥并且转换为数字型才能相加
+
+多次需要求总计，所有封装函数最为合适
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="创建元素"><a href="#创建元素" aria-hidden="true" class="header-anchor">#</a> <strong>创建</strong>元素</h3> <blockquote><p>语法：$(''</p><li></li>'');<p></p></blockquote> <h3 id="添加元素"><a href="#添加元素" aria-hidden="true" class="header-anchor">#</a> <strong>添加</strong>元素</h3> <blockquote><p>element.append(''内容'') [把内容放入匹配元素内部最后面，类似原生 appendChild。]</p> <p>element.prepend(''内容'') 把内容放入匹配元素内部最前面。</p></blockquote> <p><strong>外****部添加</strong></p> <blockquote><p>element.after(''内容'') // 把内容放入目标元素后面</p> <p>element.before(''内容'')    //  把内容放入目标元素前面</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>①内部添加元素，生成之后，它们是父子关系。
+
+②外部添加元素，生成之后，他们是兄弟关系。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>删除****元素</strong></p> <blockquote><p>element.remove()   //  删除匹配的元素（本身）</p> <p>element.empty()    //  删除匹配的元素集合中所有的子节点</p> <p>element.html('''')   //  清空匹配的元素内容</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>①remove 删除元素本身。
+
+②empt() 和  html('''') 作用等价，都可以删除元素里面的内容，只不过 html 还可以设置内容。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>**案例：购物车案例<strong><strong>模块</strong></strong>-**<strong>删除商品模块</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>①核心思路：把商品remove() 删除元素即可
+
+②有三个地方需要删除： 1. 商品后面的删除按钮 2. 删除选中的商品 3. 清理购物车
+
+③商品后面的删除按钮： 一定是删除当前的商品，所以从 $(this) 出发
+
+④删除选中的商品： 先判断小的复选框按钮是否选中状态，如果是选中，则删除对应的商品
+
+⑤清理购物车： 则是把所有的商品全部删掉
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>**案例：购物车案例<strong><strong>模块</strong></strong>-**<strong>选中商品添加背景</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>①核心思路：选中的商品添加背景，不选中移除背景即可
+
+②全选按钮点击：如果全选是选中的，则所有的商品添加背景，否则移除背景
+
+③小的复选框点击： 如果是选中状态，则当前商品添加背景，否则移除背景
+
+④这个背景，可以通过类名修改，添加类和删除类
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="jquery-尺寸、位置操作"><a href="#jquery-尺寸、位置操作" aria-hidden="true" class="header-anchor">#</a> <strong>jQuery</strong> <strong>尺寸、位置操作</strong></h2> <h3 id="jquery-尺寸"><a href="#jquery-尺寸" aria-hidden="true" class="header-anchor">#</a> <strong>jQuery 尺寸</strong></h3> <blockquote><p>width()、height()【只算width和height】</p> <p>innerWidth()、innerHeight()【包含padding+width】</p> <p>outerWidth()、outerHeight()【包含padding、border、width】</p> <p>outerWidth(true)、outerHeight(true)【包含padding、border、margin、width】</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>以上参数为空，则是获取相应值，返回的是数字型。
+如果参数为数字，则是修改相应值。
+参数可以不必写单位。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="jquery-位置"><a href="#jquery-位置" aria-hidden="true" class="header-anchor">#</a> <strong>jQuery 位置</strong></h3> <blockquote><p>位置主要有三个： offset()、position()、scrollTop()/scrollLeft()</p></blockquote> <p><strong>offset()设置或获取元素偏移</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>①offset() 方法设置或返回被选元素相对于**文档**的偏移坐标，跟父级没有关系。
+
+②该方法有2个属性 left、top 。offset().top  用于获取距离文档顶部的距离，offset().left 用于获取距离文档左侧的距离。
+
+③可以设置元素的偏移：offset({ top: 10, left: 30 });
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>position()</strong> 获取元素偏移**</p> <p>①position() 方法用于返回被选元素相对于<strong>带有定位的父级</strong>偏移坐标，如果父级都没有定位，则以文档为准。</p> <p>②该方法有2个属性 left、top。position().top 用于获取距离定位父级顶部的距离，position().left 用于获取距离定位父级左侧的距离。</p> <p>注意：该方法只能获取。</p> <p><strong>scrollTop()、scrollLeft()设置<strong><strong>或获取元素被卷去的头部和</strong></strong>左侧</strong></p> <p>①scrollTop() 方法设置或返回被选元素被卷去的头部。</p> <p>②不跟参数是获取200，参数为不带单位的数字则是设置被卷去的头部。</p> <p>scroll事件</p> <h4 id="案例带有动画的返回顶部"><a href="#案例带有动画的返回顶部" aria-hidden="true" class="header-anchor">#</a> <strong>案例带有动画的返回顶部</strong></h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>①核心原理： 使用animate动画返回顶部。
+
+②animate动画函数里面有个scrollTop 属性，可以设置位置
+
+③但是是元素做动画，因此 $(“body,html”).animate({scrollTop: 0})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="案例：品优购电梯导航"><a href="#案例：品优购电梯导航" aria-hidden="true" class="header-anchor">#</a> <strong>案例：品优购电梯导航</strong></h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>①当我们滚动到 今日推荐 模块，就让电梯导航显示出来
+
+②点击电梯导航页面可以滚动到相应内容区域
+
+③核心算法：因为电梯导航模块和内容区模块一一对应的
+
+④当我们点击电梯导航某个小模块，就可以拿到当前小模块的索引号
+
+⑤就可以把animate要移动的距离求出来：当前索引号内容区模块它的offset().top
+
+⑥然后执行动画即可
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>第二部分：
+
+①当我们点击电梯导航某个小li， 当前小li 添加current类，兄弟移除类名
+
+②当我们页面滚动到内容区域某个模块， 左侧电梯导航，相对应的小li模块，也会添加current类， 兄弟移除current类。
+
+③触发的事件是页面滚动，因此这个功能要写到页面滚动事件里面。
+
+④需要用到each，遍历内容区域大模块。 each里面能拿到内容区域每一个模块元素和索引号
+
+⑤判断的条件：  被卷去的头部 大于等于 内容区域里面每个模块的offset().top
+
+⑥就利用这个索引号找到相应的电梯导航小li添加类。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="jquery-事件"><a href="#jquery-事件" aria-hidden="true" class="header-anchor">#</a> <strong>jQuery</strong> <strong>事件</strong></h2> <p>目标：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>能够说出4种常见的注册事件 
+
+能够说出 on 绑定事件的优势
+
+能够说出 jQuery 事件委派的优点以及方式
+
+能够说出绑定事件与解绑事件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="jquery事件注册"><a href="#jquery事件注册" aria-hidden="true" class="header-anchor">#</a> <strong>jQuery</strong>事件注册**</h3> <blockquote><p>语法：element.事件(function(){})</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(“div”).click(function(){  事件处理程序 })       
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>其他事件和原生基本一致。</p> <p>比如mouseover、mouseout、blur、focus、change、keydown、keyup、resize、scroll 等</p></blockquote> <h3 id="事件处理-on-绑定事件"><a href="#事件处理-on-绑定事件" aria-hidden="true" class="header-anchor">#</a> <strong>事件处理</strong> <strong>on()</strong> <strong>绑定事件</strong></h3> <blockquote><p>on() 方法在匹配元素上绑定一个或多个事件的事件处理函数</p></blockquote> <blockquote><p>语法：element.on(events,[selector],fn)</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>\1. events:一个或多个用空格分隔的事件类型，如&quot;click&quot;或&quot;keydown&quot; 。
+
+\2. selector: 元素的子元素选择器 。
+
+\3. fn:回调函数 即绑定在元素身上的侦听函数。 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>on() 方法优势1：</strong></p> <p>1、可以绑定多个事件，多个处理事件处理程序。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(“div”).on({
+
+  mouseover: function(){}, 
+
+  mouseout: function(){},
+
+  click: function(){}  
+
+});       
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong>on() 方法优势2：</strong></p> <blockquote><p>可以事件委派操作。事件委派的定义就是，把原来加给子元素身上的事件绑定在父元素身上，就是把事件委派给父元素。</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>$('ul').on('click', 'li', function() {
+
+​    alert('hello world!');
+
+});    
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><p>在此之前有bind(), live()，delegate()等方法来处理事件绑定或者事件委派，最新版本的请用on替代他们。</p></blockquote> <p><strong>on() 方法优势3：</strong></p> <blockquote><p>动态创建的元素，click()没有办法绑定事件，on() 可以给动态生成的元素绑定事件</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(“div&quot;).on(&quot;click&quot;,”p”, function(){
+
+​     alert(&quot;俺可以给动态生成的元素绑定事件&quot;)
+
+ });       
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="案例：发布微博案例"><a href="#案例：发布微博案例" aria-hidden="true" class="header-anchor">#</a> 案例：发布微博案例</h3> <blockquote><p>①点击发布按钮， 动态创建一个小li，放入文本框的内容和删除按钮， 并且添加到ul 中。</p> <p>②点击的删除按钮，可以删除当前的微博留言。</p></blockquote> <h3 id="事件处理-off-解绑事件"><a href="#事件处理-off-解绑事件" aria-hidden="true" class="header-anchor">#</a> <strong>事件处理</strong> <strong>off()</strong> <strong>解绑事件</strong></h3> <blockquote><p>off() 方法可以移除通过 on() 方法添加的事件处理程序。</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).off() // 解绑p元素所有事件处理程序
+
+$(&quot;p&quot;).off( &quot;click&quot;)  // 解绑p元素上面的点击事件 后面的 foo 是侦听函数名
+
+$(&quot;ul&quot;).off(&quot;click&quot;, &quot;li&quot;);   // 解绑事件委托
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><p>如果有的事件只想触发一次， 可以使用 one()来绑定事件。</p></blockquote> <h3 id="自动触发事件trigger"><a href="#自动触发事件trigger" aria-hidden="true" class="header-anchor">#</a> <strong>自动触发事件trigger()</strong></h3> <blockquote><p>有些事件希望自动触发, 比如轮播图自动播放功能跟点击右侧按钮一致。可以利用定时器自动触发右侧按钮点击事件，不必鼠标点击触发</p></blockquote> <blockquote><p>element.click()  // 第一种简写形式</p></blockquote> <blockquote><p>element.trigger(&quot;type&quot;)//第二种自动触发模式</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).on(&quot;click&quot;, function () {
+
+  alert(&quot;hi~&quot;);
+
+}); 
+
+$(&quot;p&quot;).trigger(&quot;click&quot;); // 此时自动触发点击事件，不需要鼠标点击
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><p>element.triggerHandler(type)  // 第三种自动触发模式</p></blockquote> <blockquote><p>triggerHandler模式不会触发元素的默认行为，这是和前面两种的区别。</p></blockquote></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">7/18/2019, 2:26:44 AM</span></div></footer> <!----> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a9f6d8ec.js" defer></script><script src="/assets/js/4.f605a52d.js" defer></script><script src="/assets/js/1.a2510d10.js" defer></script><script src="/assets/js/34.896ec5ef.js" defer></script>
+  </body>
+</html>

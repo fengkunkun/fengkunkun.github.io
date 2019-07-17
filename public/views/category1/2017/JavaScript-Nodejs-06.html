@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript-Nodejs-06 | Sumind&#39;s Blog</title>
+    <meta name="description" content="做一个有灵魂的前端工程师">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.75dd9f78.css" as="style"><link rel="preload" href="/assets/js/app.a9f6d8ec.js" as="script"><link rel="preload" href="/assets/js/4.f605a52d.js" as="script"><link rel="preload" href="/assets/js/1.a2510d10.js" as="script"><link rel="preload" href="/assets/js/29.a10472bb.js" as="script"><link rel="prefetch" href="/assets/js/10.96e33a09.js"><link rel="prefetch" href="/assets/js/11.ce91667a.js"><link rel="prefetch" href="/assets/js/12.3fed3056.js"><link rel="prefetch" href="/assets/js/13.41117cae.js"><link rel="prefetch" href="/assets/js/14.0a836303.js"><link rel="prefetch" href="/assets/js/15.c7a70042.js"><link rel="prefetch" href="/assets/js/16.eda894ef.js"><link rel="prefetch" href="/assets/js/17.9972567d.js"><link rel="prefetch" href="/assets/js/18.5c2087d9.js"><link rel="prefetch" href="/assets/js/19.9e5909ec.js"><link rel="prefetch" href="/assets/js/20.81cf4463.js"><link rel="prefetch" href="/assets/js/21.b1896877.js"><link rel="prefetch" href="/assets/js/22.3058e867.js"><link rel="prefetch" href="/assets/js/23.76b75888.js"><link rel="prefetch" href="/assets/js/24.cb2b6224.js"><link rel="prefetch" href="/assets/js/25.66f6d5cc.js"><link rel="prefetch" href="/assets/js/26.d3ba5339.js"><link rel="prefetch" href="/assets/js/27.1b1cd18a.js"><link rel="prefetch" href="/assets/js/28.d0ca9393.js"><link rel="prefetch" href="/assets/js/30.13388d66.js"><link rel="prefetch" href="/assets/js/31.cd6ba917.js"><link rel="prefetch" href="/assets/js/32.097ed36d.js"><link rel="prefetch" href="/assets/js/33.e6ea0697.js"><link rel="prefetch" href="/assets/js/34.896ec5ef.js"><link rel="prefetch" href="/assets/js/35.9bd942f7.js"><link rel="prefetch" href="/assets/js/36.2b774afe.js"><link rel="prefetch" href="/assets/js/37.098262ce.js"><link rel="prefetch" href="/assets/js/38.6a5cbac5.js"><link rel="prefetch" href="/assets/js/39.03cc91d2.js"><link rel="prefetch" href="/assets/js/40.8d0a7377.js"><link rel="prefetch" href="/assets/js/41.dea6138e.js"><link rel="prefetch" href="/assets/js/42.555d373d.js"><link rel="prefetch" href="/assets/js/43.b47eb251.js"><link rel="prefetch" href="/assets/js/44.1ffd7b5b.js"><link rel="prefetch" href="/assets/js/45.cfb5da00.js"><link rel="prefetch" href="/assets/js/46.a56b9b85.js"><link rel="prefetch" href="/assets/js/47.4f781dff.js"><link rel="prefetch" href="/assets/js/48.4f542143.js"><link rel="prefetch" href="/assets/js/49.5c2eb801.js"><link rel="prefetch" href="/assets/js/5.e7fbaf2f.js"><link rel="prefetch" href="/assets/js/50.4fb88d7e.js"><link rel="prefetch" href="/assets/js/51.9028fef6.js"><link rel="prefetch" href="/assets/js/52.abb81def.js"><link rel="prefetch" href="/assets/js/6.896bf5be.js"><link rel="prefetch" href="/assets/js/7.b5260bec.js"><link rel="prefetch" href="/assets/js/8.5b3b73d8.js"><link rel="prefetch" href="/assets/js/9.eba5c3f6.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.2553b2f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.75dd9f78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/01.jpg" alt="Sumind's Blog" class="logo"> <span class="site-name">Sumind's Blog</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">是否开启夜览模式？</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript-Nodejs-06</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_1-1-什么是数据库" class="sidebar-link">1.1 什么是数据库</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_1-2-mysql简介" class="sidebar-link">1.2 MySQL简介</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_1-3-安装mysql" class="sidebar-link">1.3 安装MySQL</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_1-4-安装操作mysql的图形化处理界面" class="sidebar-link">1.4 安装操作MySQL的图形化处理界面</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_4-1-基本查询" class="sidebar-link">4.1 基本查询</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_4-2-带where子句的查询" class="sidebar-link">4.2 带where子句的查询</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_4-3-模糊查询" class="sidebar-link">4.3 模糊查询</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_4-4-查询结果排序" class="sidebar-link">4.4 查询结果排序</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_4-5-限制查询结果" class="sidebar-link">4.5 限制查询结果</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_9-1-mysql模块的作用" class="sidebar-link">9.1 mysql模块的作用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_9-2-mysql基本用法" class="sidebar-link">9.2 mysql基本用法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_9-3-查询-read" class="sidebar-link">9.3 查询 --- read</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_9-4-添加-create" class="sidebar-link">9.4 添加 --- create</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_9-5-修改-update" class="sidebar-link">9.5 修改 --- update</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_9-6-删除-delete" class="sidebar-link">9.6 删除 --- delete</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_10-1-什么是模块化" class="sidebar-link">10.1 什么是模块化</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_10-2-全局作用域和局部作用域" class="sidebar-link">10.2 全局作用域和局部作用域</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_10-3-module-exports导出属性和方法" class="sidebar-link">10.3 module.exports导出属性和方法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-Nodejs-06.html#_10-4-封装-db-js-模块" class="sidebar-link">10.4 封装 db.js 模块</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>JavaScript-Nodejs-06</h1> <hr> <div data-v-0b496ca7><i class="iconfont reco-account" data-v-0b496ca7><span data-v-0b496ca7>Sumind</span></i> <i class="iconfont reco-date" data-v-0b496ca7><span data-v-0b496ca7>2017-7-29</span></i> <!----> <!----></div></div> <div class="content__default"><h5 id="javascript-nodejs-06"><a href="#javascript-nodejs-06" aria-hidden="true" class="header-anchor">#</a> JavaScript-Nodejs-06</h5> <p>JavaScript-Nodejs</p> <h1 id="_1-mysql数据库"><a href="#_1-mysql数据库" aria-hidden="true" class="header-anchor">#</a> 1. MySQL数据库</h1> <h2 id="_1-1-什么是数据库"><a href="#_1-1-什么是数据库" aria-hidden="true" class="header-anchor">#</a> 1.1 什么是数据库</h2> <p>存储数据的仓库。</p> <p>常见的数据库: MySQL、 Oracle、 Sqlserver、 DB2等。</p> <p>之前，没学MySQL之前，我们将数据放到db.json中；学习了数据库，就可以将数据存储到数据库中。</p> <h2 id="_1-2-mysql简介"><a href="#_1-2-mysql简介" aria-hidden="true" class="header-anchor">#</a> 1.2 MySQL简介</h2> <p>MySQL是一个关系型数据库管理系统，由瑞典MySQL AB 公司开发，目前属于 Oracle 旗下产品</p> <p>数据库分为三级关系：</p> <ul><li><p>数据库服务器：已经安装过了，曾经安装的wampserver，里面已经包含了MySQL服务器</p></li> <li><p>数据库</p></li> <li><p><strong>数据表</strong></p></li></ul> <p>数据表的结构和excel一模一样：</p> <p>表结构:</p> <p>和excel表的结构是一样的。
+每一列都是一类数据 --- 字段
+每一行代表一条数据 --- 记录</p> <h2 id="_1-3-安装mysql"><a href="#_1-3-安装mysql" aria-hidden="true" class="header-anchor">#</a> 1.3 安装MySQL</h2> <blockquote><p>之前，我们安装过一个集成软件WampServer，其实安装完它，我们的计算机上就已经安装好MySQL了，不必从新安装了。当然也可以单独安装MySQL，不过得去官网下载MySQL。</p></blockquote> <p>安装完MySQL，我们的计算机又变成服务器了，不过不是Web服务器，而是MySQL数据库服务器了。我们可以将数据存储到MySQL服务器中，让它帮我们将数据永久保存。</p> <h2 id="_1-4-安装操作mysql的图形化处理界面"><a href="#_1-4-安装操作mysql的图形化处理界面" aria-hidden="true" class="header-anchor">#</a> 1.4 安装操作MySQL的图形化处理界面</h2> <p>其实操作MySQL不使用图形化界面，只使用命令行窗口也可以，但是操作起来不方便，所以我们安装一个图形化管理软件。</p> <p>管理MySQL的图形化界面有很多:  Navicat、 Sqlyog、 phpmyadmin等等</p> <p>课上，我们使用的是Nacicat。</p> <ol><li><p>解压</p></li> <li><p>选择版本</p></li> <li><p>安装 --- 傻瓜操作</p></li></ol> <p>注意： <strong>==安装路径不能有中文==</strong></p> <ol start="4"><li>安装完成后会在桌面上产生该图标</li></ol> <p>破解</p> <ol start="5"><li>使用客户端链接MySQL服务器</li></ol> <p>① 点击“链接”按钮 ---  选择要链接的数据库种类</p> <p>② 配置链接信息</p> <p>用户名： root          该用户是MySQL服务器系统的最高用户，拥有该系统的所有权限
+密码：     空          	   WampServer中MySQL系统root用户的默认密码</p> <p><strong>保存</strong></p> <p>③ 上图的连接名称是localhost，所以这里点击“localhost”结果</p> <p>左侧的localhost下的内容都是数据库名称。</p> <p>==information_schema、mysql、performance_schema 这三个是系统数据库（千万别动）==。
+其他的都是自建数据库</p> <p>看到上图，说明已经使用navicat 客户端正常链接到了 MySQL服务器了。</p> <h1 id="_2-使用navicat创建数据库"><a href="#_2-使用navicat创建数据库" aria-hidden="true" class="header-anchor">#</a> 2. 使用navicat创建数据库</h1> <p>在 'localhost' 上点击鼠标右键， 选择 '新建数据库'</p> <p>填写数据库名称 和 字符集（建议设置，也可以不设置）</p> <h1 id="_3-使用navicat创建数据表"><a href="#_3-使用navicat创建数据表" aria-hidden="true" class="header-anchor">#</a> 3. 使用navicat创建数据表</h1> <p>双击 'study' ---&gt;  '表'（右键） ---&gt;  '新建表'</p> <p>设置数据表的字段名、数据类型</p> <p>设置几个字段</p> <ul><li>id 学号，唯一</li> <li>name  姓名</li> <li>age  年龄</li> <li>sex 性别</li> <li>hobby 爱好</li> <li>height 身高</li> <li>weight 体重</li></ul> <p>主键： 有两个特点（唯一，非空），能够定位到唯一的一行数据</p> <p>自动递增： 数字自增长</p> <p>保存后使用F5刷新，能够看到新建好的表</p> <p>下面添加一些数据：</p> <h1 id="sql语句"><a href="#sql语句" aria-hidden="true" class="header-anchor">#</a> SQL语句</h1> <p>使用SQL语句就能很方便对数据库进行增删改查操作</p> <h1 id="_4-数据查询"><a href="#_4-数据查询" aria-hidden="true" class="header-anchor">#</a> 4. 数据查询</h1> <p>语法格式:</p> <p>SELECT  字段名1, 字段名2, .....  FROM 表名</p> <p>​     [ WHERE &lt;条件表达式&gt; ]</p> <p>​     [ ORDER BY &lt;字段名&gt; [ ASC|DESC ]]</p> <p>​     [ LIMIT  START, LENGTH]</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment"># 基本的查询语法</span>
+<span class="token comment"># SELECT 字段1,字段2,... FROM 表名</span>
+<span class="token keyword">SELECT</span> id<span class="token punctuation">,</span>name<span class="token punctuation">,</span>age <span class="token keyword">FROM</span> stu
+<span class="token comment"># 查询所有的字段</span>
+<span class="token comment"># SELECT * FROM 表名</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> stu
+<span class="token comment"># 带条件的查询</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> 表名 <span class="token keyword">WHERE</span> 条件
+
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="_4-1-基本查询"><a href="#_4-1-基本查询" aria-hidden="true" class="header-anchor">#</a> 4.1 基本查询</h2> <p>格式:  select  字段名1, 字段名2,....  from  表名</p> <p>案例1: 查询所有学生的学号和姓名</p> <p>表 :  stu</p> <p>字段： id,  name</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> id<span class="token punctuation">,</span>name <span class="token keyword">from</span> stu
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>案例2: 查询学生的全部信息 (全部字段信息)</p> <p>表: stu</p> <p>字段:  id,name,age,sex,hobby,height,weight</p> <p>​            *是通配符，代表所有的字段</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="_4-2-带where子句的查询"><a href="#_4-2-带where子句的查询" aria-hidden="true" class="header-anchor">#</a> 4.2 带where子句的查询</h2> <p>select  field1, field2... from 表名  查询表中的所有数据</p> <p>where 可以使用条件来筛选查询出的结果</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">-- 查询所有的学生</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu
+
+<span class="token comment">-- 查询所有学生的id，name，height</span>
+<span class="token keyword">select</span> id<span class="token punctuation">,</span>name<span class="token punctuation">,</span>height <span class="token keyword">from</span> stu
+
+<span class="token comment">-- 带条件的查询</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> 条件
+
+<span class="token comment">-- 查询所有的男同学</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> sex<span class="token operator">=</span><span class="token string">'男'</span><span class="token number">4</span>
+
+<span class="token comment">-- 查询年龄大于50的同学</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> age <span class="token operator">&gt;</span> <span class="token number">50</span>
+
+<span class="token comment">-- 查询年龄大于50岁的男同学</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> age<span class="token operator">&gt;</span><span class="token number">50</span> <span class="token operator">and</span> sex<span class="token operator">=</span><span class="token string">'男'</span>
+
+<span class="token comment">-- 查询年龄在30~60之间的同学，包括30和60</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> age<span class="token operator">&gt;=</span><span class="token number">30</span> <span class="token operator">and</span> age<span class="token operator">&lt;=</span><span class="token number">60</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> age <span class="token operator">between</span> <span class="token number">30</span> <span class="token operator">and</span> <span class="token number">60</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>案例3: 查询学号为2的学生的所有信息</p> <p>表： stu</p> <p>字段： 所有字段  *</p> <p>筛选条件：  id=2</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">2</span>
+<span class="token comment"># 相等判断，写一个等号</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>案例4: 查询年龄大于等于25的学生的学号、姓名、年龄</p> <p>表： stu</p> <p>字段： id,name,age</p> <p>筛选条件： age&gt;=25</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> id<span class="token punctuation">,</span>name<span class="token punctuation">,</span>age <span class="token keyword">from</span> stu <span class="token keyword">where</span> age <span class="token operator">&gt;=</span> <span class="token number">25</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>案例5: 查询年龄在23-28之间的学生的所有信息</p> <p>表： stu</p> <p>字段： *</p> <p>筛选条件：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> age <span class="token operator">&gt;=</span> <span class="token number">23</span> <span class="token operator">and</span> age <span class="token operator">&lt;=</span> <span class="token number">28</span>
+
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> age <span class="token operator">between</span> <span class="token number">23</span> <span class="token operator">and</span> <span class="token number">28</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="_4-3-模糊查询"><a href="#_4-3-模糊查询" aria-hidden="true" class="header-anchor">#</a> 4.3 模糊查询</h2> <p>通配符:</p> <p>%: 代表任意长度(包括0)的任意字符</p> <p>_:  代表1位长度的任意字符</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>a%b :  ab  abb  asdfb
+a_b: acb  atb 
+a_b%:  acb  a&amp;baaad
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>like: 在执行模糊查询时，必须使用like来作为匹配条件</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">-- 模糊查询</span>
+<span class="token comment">-- 查询姓王的同学</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> name <span class="token operator">like</span> <span class="token string">'王%'</span>
+
+<span class="token comment">-- 查询姓王的同学，要求完整的姓名必须是三个字</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> name <span class="token operator">like</span> <span class="token string">'王__'</span>
+
+<span class="token comment">-- 查询名字中带有王的人</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> name <span class="token operator">like</span> <span class="token string">'%王%'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_4-4-查询结果排序"><a href="#_4-4-查询结果排序" aria-hidden="true" class="header-anchor">#</a> 4.4 查询结果排序</h2> <p>order by 可以对查询结果按某个字段进行升序或者降序排列</p> <p>升序 asc （默认值） ，  降序 desc</p> <p>可进行排序的字段通常是  整型  英文字符串型  日期型  (中文字符串也行,但一般不用)</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">-- select * from stu order by 字段 排序方式, 字段 排序方式</span>
+<span class="token comment">-- 查询所有的学生，按年龄升序排列</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">order</span> <span class="token keyword">by</span> age <span class="token keyword">asc</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">order</span> <span class="token keyword">by</span> age
+
+<span class="token comment">-- 查询所有的学生，按年龄降序排列</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">order</span> <span class="token keyword">by</span> age <span class="token keyword">desc</span>
+
+<span class="token comment">-- 查询所有的学生，先按身高升序排列，如果身高相同再按id降序排列</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">order</span> <span class="token keyword">by</span> height <span class="token keyword">asc</span><span class="token punctuation">,</span> id <span class="token keyword">desc</span>
+
+<span class="token comment">-- 查询所有的男同学，并按年龄降序排列</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> sex<span class="token operator">=</span><span class="token string">'男'</span> <span class="token keyword">order</span> <span class="token keyword">by</span> age <span class="token keyword">desc</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><strong>==注意：如果SQL语句中，有where和order by，where一定要放到order by之前==</strong>。</p> <h2 id="_4-5-限制查询结果"><a href="#_4-5-限制查询结果" aria-hidden="true" class="header-anchor">#</a> 4.5 限制查询结果</h2> <p>limit 用来限制查询结果的起始点和长度</p> <p>格式:  limit  start, length</p> <p>start: 起始点。 查询结果的索引，从0开始。 0代表第一条数据。如果省略start，则默认表示从0开始</p> <p>length: 长度</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">-- 查询前3个同学</span>
+<span class="token comment">-- select * from stu limit 0, 3</span>
+
+<span class="token comment">-- 查询第3到第5名同学</span>
+<span class="token comment">-- select * from stu limit 2,3</span>
+
+<span class="token comment">-- 查询年龄最大的三个同学</span>
+<span class="token comment">-- select * from stu order by age desc limit 0,3</span>
+
+<span class="token comment">-- 查询年龄最大的三个男同学</span>
+<span class="token comment">-- select * from stu where sex='男' order by age desc limit 0,3</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> stu <span class="token keyword">where</span> sex<span class="token operator">=</span><span class="token string">'男'</span> <span class="token keyword">order</span> <span class="token keyword">by</span> age <span class="token keyword">desc</span> <span class="token keyword">limit</span> <span class="token number">3</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong>==注意：where、order by、limit如果一起使用，是有顺序的，where在最前面、其次是order by、limit要放到最后==。</strong></p> <h1 id="_5-添加数据"><a href="#_5-添加数据" aria-hidden="true" class="header-anchor">#</a> 5. 添加数据</h1> <p>格式:  insert into 表名(字段名1，字段名2,....)  values (值1，值2，....)</p> <p>注意: ==字段的顺序要和值的顺序是完全匹配的==
+==自增长类型的主键，可以使用null来填充；MySQL会自动填充数据==
+==如果每个字段都有数据，那么表名后面可以不跟字段名，但是values里面的顺序必须正确==</p> <p>案例: 向stu表中添加一条数据</p> <p><strong>方式一</strong>：指定字段和值，只要字段和值对应即可。和顺序无关</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">insert</span> <span class="token keyword">into</span> stu <span class="token punctuation">(</span>sex<span class="token punctuation">,</span> weight<span class="token punctuation">,</span> name<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token string">'男'</span><span class="token punctuation">,</span> <span class="token number">60</span><span class="token punctuation">,</span> <span class="token string">'庞凯'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>方式二：和顺序有关，因为没指定字段，所以值必须是所有的值，而且顺序和表中字段的顺序要一致</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">insert</span> <span class="token keyword">into</span> stu <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token string">'丁欢'</span><span class="token punctuation">,</span> <span class="token number">37</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">,</span> <span class="token number">170</span><span class="token punctuation">,</span> <span class="token number">180</span><span class="token punctuation">,</span> <span class="token string">'打盹'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>==方式三==：使用set里设置新数据的值，没有顺序关系</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">insert</span> <span class="token keyword">into</span> stu <span class="token keyword">set</span> age<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span>name<span class="token operator">=</span><span class="token string">'胡小川'</span><span class="token punctuation">,</span>height<span class="token operator">=</span><span class="token number">150</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>==方式一和方式三必须要掌握==。</p> <h1 id="_6-修改数据"><a href="#_6-修改数据" aria-hidden="true" class="header-anchor">#</a> 6. 修改数据</h1> <p>格式:</p> <p>update  表名   set   字段1=值1, 字段2=值2,...  where  ==修改条件==</p> <p>修改表中的哪一条（几条）数据的 字段1=值1...</p> <p>==不指定修改条件会修改所有的数据==</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">-- 修改id为1的同学的年龄为53</span>
+<span class="token keyword">update</span> stu <span class="token keyword">set</span> age<span class="token operator">=</span><span class="token number">53</span> <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span>
+
+<span class="token comment">-- 修改id为1的同学的年龄为35，身高为160</span>
+<span class="token keyword">update</span> stu <span class="token keyword">set</span> age<span class="token operator">=</span><span class="token number">35</span><span class="token punctuation">,</span>height<span class="token operator">=</span><span class="token number">160</span> <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span>
+
+<span class="token comment">-- 如果修改的时候，不加条件，则会修改全部的数据</span>
+<span class="token keyword">update</span> stu <span class="token keyword">set</span> weight <span class="token operator">=</span> <span class="token number">60</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h1 id="_7-删除数据"><a href="#_7-删除数据" aria-hidden="true" class="header-anchor">#</a> 7. 删除数据</h1> <p>格式:  delete  from 表名  where ==删除条件==</p> <p>==注意：不指定条件将删除所有数据==</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token comment">-- 删除id为14的同学</span>
+<span class="token comment">-- delete from stu where id=14</span>
+
+<span class="token comment">-- 删除的时候，不加条件，将删除全部数据</span>
+<span class="token keyword">delete</span> <span class="token keyword">from</span> stu
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><p>drop table stu; -- 删除stu表</p> <p>drop database qishiwu -- 删除库，加入反引号可以防止出现问题，否则MySQL可能会将70当做关键字或其他意思解释</p></blockquote> <h1 id="_8-连接查询"><a href="#_8-连接查询" aria-hidden="true" class="header-anchor">#</a> 8. 连接查询</h1> <p>连接查询意思是将两个表或更多张表连接到一起查询。查询的结果一般会包含有两个表的全部结果。</p> <p>不是说任意的两个表都可以连接查询；能够连接查询的两个表必须有关系才行。</p> <p>连接查询的语法：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select * from 表1 连接 表2 on 两个表的关系
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>创建两个表，boy和girl表：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>-- select * from 表1 连接 表2 on 两表的关系
+
+-- 左连接
+select * from boy left join girl on boy.flower = girl.flower
+
+-- 右连接
+select * from boy right join girl on boy.flower = girl.flower
+
+-- 内连接
+select * from boy join girl on boy.flower = girl.flower
+
+-- 细节问题(可以为字段名和表名定义别名)
+-- 给表名定义别名
+select * from boy b join girl g on b.flower=g.flower
+-- 给字段定义别名
+select 
+	b.name bname,
+	b.flower bflower,
+	g.name gname,
+	g.flower gflower 
+from boy b 
+join girl g 
+on b.flower=g.flower
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>下面可以使用stu表练习连接查询：</p> <ul><li><p>创建一个category表，它是分类表</p></li> <li><p>给stu表添加一个cid字段，它指向category表中的id</p></li> <li><p>两个表的关系是： stu.cid = category.id</p></li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>-- select * from 表1 join 表2 on 表的关系
+select * from stu join category on stu.cid=category.id
+
+-- 查询学生的id、姓名、分类的名称
+select stu.id, stu.name, category.name from stu join category on stu.cid=category.id
+
+-- 查询学生的id、姓名、分类的名称，并且使用别名
+select s.id, s.name sname, c.name cname from stu s join category c on s.cid=c.id
+
+-- 查询学生id小于8的学生的id、姓名、分类的名称
+select 
+	s.id,
+	s.name sname,
+	c.name cname 
+from stu s 
+join category c 
+on s.cid=c.id 
+where s.id&lt;8
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h1 id="_9-node中的mysql模块"><a href="#_9-node中的mysql模块" aria-hidden="true" class="header-anchor">#</a> 9. node中的mysql模块</h1> <h2 id="_9-1-mysql模块的作用"><a href="#_9-1-mysql模块的作用" aria-hidden="true" class="header-anchor">#</a> 9.1 mysql模块的作用</h2> <p>mysql模块是一个第三方模块，专门用来操作MySQL数据库。 可以执行增删改查操作。</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 如果前面没有安装过其他模块，需要先初始化</span>
+<span class="token function">npm</span> i mysql
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>curd: 就代表数据库的增删改查</p> <p>c: create 就是添加 （增）</p> <p>u: update 就是修改 （改）</p> <p>r: read 就是查询 （查）</p> <p>d: delete 就是删除 （删）</p> <h2 id="_9-2-mysql基本用法"><a href="#_9-2-mysql基本用法" aria-hidden="true" class="header-anchor">#</a> 9.2 mysql基本用法</h2> <p>在Node中使用MySQL模块一共需要5个步骤：</p> <ol><li><p>加载 MySQL 模块</p></li> <li><p>创建 MySQL 连接对象</p></li> <li><p>连接 MySQL 服务器</p></li> <li><p>执行SQL语句</p></li> <li><p>关闭链接</p></li></ol> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//目标: 将student表中所有的数据查询出来并显示到终端</span>
+
+<span class="token comment">//1. 加载 mysql 模块</span>
+<span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2. 创建mysql链接对象</span>
+<span class="token keyword">const</span> conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token punctuation">:</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>  <span class="token comment">//指定mysql服务器的ip地址</span>
+    port<span class="token punctuation">:</span> <span class="token number">3306</span><span class="token punctuation">,</span>         <span class="token comment">// 苹果电脑MySQL端口是8888</span>
+    user<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>       <span class="token comment">//设置用户名</span>
+    password<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>   <span class="token comment">//用户名对应的密码</span>
+    database<span class="token punctuation">:</span> <span class="token string">'web70'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//3. 链接mysql服务器</span>
+conn<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//4. 执行SQL语句</span>
+<span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">'select * from student'</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * query方法的功能：执行SQL语句
+ * 参数1: 要执行的SQL语句
+ * 参数2: 占位符所对应的数据，可选
+ * 参数3: 当SQL执行完成后触发的回调函数，有三个参数
+ *    err: 错误对象。如果SQL执行失败，err就是错误信息的对象；如果执行成功则为null
+ *    results: SQL执行的结果
+ *    fields: 本次SQL执行涉及到的字段信息
+ */</span>
+<span class="token comment">//当执行查询的SQL语句时，返回值一定一个数组；数组内部是对象；</span>
+<span class="token comment">//对象的下标是 数据表的字段名</span>
+<span class="token comment">//results = [</span>
+<span class="token comment">// {sno:1, sname:&quot;葛小伦&quot;, snickname:&quot;gxl&quot;, sage:28, sgender:&quot;男&quot;, stime:&quot;2019-01-10&quot;, sdept:1},</span>
+<span class="token comment">// {sno:2, sname:&quot;蔷薇&quot;, snickname:&quot;gw&quot;, sage:200, sgender:&quot;女&quot;, stime:&quot;2019-01-11&quot;, sdept:3},</span>
+<span class="token comment">// ...</span>
+<span class="token comment">//]</span>
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> results<span class="token punctuation">,</span> fields</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>results<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fields<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//一般用不上，可以不写</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//5. 关闭链接</span>
+conn<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="_9-3-查询-read"><a href="#_9-3-查询-read" aria-hidden="true" class="header-anchor">#</a> 9.3 查询 --- read</h2> <p>==执行查询类型的SQL语句，查询结果（result）是一个数组，每个单元是对象，对象的属性是数据表的字段名==</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//目标: 将student表中所有的数据查询出来并显示到终端</span>
+
+<span class="token comment">//1. 加载 mysql 模块</span>
+<span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2. 创建mysql链接对象</span>
+<span class="token keyword">const</span> conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>  <span class="token comment">//指定mysql服务器的ip地址</span>
+    user<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>       <span class="token comment">//设置用户名</span>
+    password<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>   <span class="token comment">//用户名对应的密码</span>
+    database<span class="token punctuation">:</span> <span class="token string">'study'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//3. 链接mysql服务器</span>
+conn<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//4. 执行SQL语句</span>
+<span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">'select * from student'</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * query方法的功能：执行SQL语句
+ * 参数1: 要执行的SQL语句
+ * 参数2: 占位符所对应的数据，可选
+ * 参数3: 当SQL执行完成后触发的回调函数，有三个参数
+ *    err: 错误对象。如果SQL执行失败，err就是错误信息的对象；如果执行成功则为null
+ *    results: SQL执行的结果
+ *    fields: 本次SQL执行涉及到的字段信息
+ */</span>
+<span class="token comment">//当执行查询的SQL语句时，返回值一定一个数组；数组内部是对象；</span>
+<span class="token comment">//对象的下标是 数据表的字段名</span>
+<span class="token comment">//results = [</span>
+<span class="token comment">// {sno:1, sname:&quot;葛小伦&quot;, snickname:&quot;gxl&quot;, sage:28, sgender:&quot;男&quot;, stime:&quot;2019-01-10&quot;, sdept:1},</span>
+<span class="token comment">// {sno:2, sname:&quot;蔷薇&quot;, snickname:&quot;gw&quot;, sage:200, sgender:&quot;女&quot;, stime:&quot;2019-01-11&quot;, sdept:3},</span>
+<span class="token comment">// ...</span>
+<span class="token comment">//]</span>
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> results<span class="token punctuation">,</span> fields</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>results<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fields<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//一般用不上，可以不写</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//5. 关闭链接</span>
+conn<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><p>占位符模式：</p> <p>当SQL语句中使用了占位符，则query方法需要使用参数2</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 查询所有的男性学生信息并显示到终端</span>
+
+<span class="token comment">//1. 加载mysql模块</span>
+<span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2. 创建mysql链接对象</span>
+<span class="token keyword">const</span> conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>
+    user<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    password<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    database<span class="token punctuation">:</span> <span class="token string">'study'</span><span class="token punctuation">,</span>
+    port<span class="token punctuation">:</span> <span class="token number">3306</span>  <span class="token comment">// 设置mysql服务器的端口号，默认的3306可以省略</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//3. 链接mysql服务器</span>
+conn<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//4. 执行SQL语句</span>
+<span class="token comment">//在sql语句中出现的 ? 就是占位符</span>
+<span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">'select * from student where sgender=?'</span><span class="token punctuation">;</span>
+<span class="token comment">//当sql语句中有？时，就使用参数2来设置占位符代表的具体值</span>
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> <span class="token string">&quot;男&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//5. 关闭链接</span>
+conn<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><p>如果SQL中有多个占位符，则传递数组</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> sql <span class="token operator">=</span> <span class="token string">'select * from student where sage &gt; ? or sgender = ?'</span><span class="token punctuation">;</span>
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">throw</span> err<span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_9-4-添加-create"><a href="#_9-4-添加-create" aria-hidden="true" class="header-anchor">#</a> 9.4 添加 --- create</h2> <p>==执行添加类型的SQL语句，查询结果（result）是一个对象，该对象中有两个属性需要记住==</p> <ul><li>affectedRows： 受影响行数</li> <li>insertID： 查询数据的主键值</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//目标：向student表中添加一条数据</span>
+
+<span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>
+    user<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    password<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    database<span class="token punctuation">:</span> <span class="token string">'study'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+conn<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//4. 执行SQL语句</span>
+<span class="token keyword">let</span> sql <span class="token operator">=</span> <span class="token string">&quot;insert into student(sname, sage) values ('马大帅', 36)&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//当执行添加的SQL语句时，返回值是一个对象，在该对象中有两个属性需要记住</span>
+<span class="token comment">// affectedRows: 受影响函数</span>
+<span class="token comment">// insertId: 添加的新数据的主键值，此处就是 sno</span>
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//5. 关闭链接</span>
+conn<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>查询结果：</p> <p>占位符形式：</p> <p>数据添加时，占位符需要一个对象。 对象的属性是数据表字段名，值是要写入数据表的数据</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//目标: 向student表添加一条数据</span>
+
+<span class="token comment">//1. 加载mysql模块</span>
+<span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2. 创建mysql链接对象</span>
+<span class="token keyword">const</span> conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>
+    user<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    password<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    database<span class="token punctuation">:</span> <span class="token string">'study'</span><span class="token punctuation">,</span>
+    port<span class="token punctuation">:</span> <span class="token number">3306</span>  <span class="token comment">// 设置mysql服务器的端口号，默认的3306可以省略</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//3. 链接mysql服务器</span>
+conn<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//4. 执行SQL语句</span>
+<span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">&quot;insert into student set ?&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//当执行添加的SQL语句中有占位符，那么该占位符需要一个对象来填充</span>
+<span class="token comment">//该对象下标是数据表的字段名，自增长的主键不需要写</span>
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    sname<span class="token punctuation">:</span> <span class="token string">&quot;嗯嗯嗯&quot;</span><span class="token punctuation">,</span>
+    snickname<span class="token punctuation">:</span> <span class="token string">&quot;enenen&quot;</span><span class="token punctuation">,</span>
+    sage<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    sgender<span class="token punctuation">:</span> <span class="token string">&quot;男&quot;</span><span class="token punctuation">,</span>
+    stime<span class="token punctuation">:</span> <span class="token string">&quot;2019-02-18&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> obj<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//5. 关闭链接</span>
+conn<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><h2 id="_9-5-修改-update"><a href="#_9-5-修改-update" aria-hidden="true" class="header-anchor">#</a> 9.5 修改 --- update</h2> <p>==执行修改类型的SQL语句，查询结果（result）是一个对象，该对象中有 affectedRows 属性==</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//目标: 将学号为6的学生姓名改为初音未来，性别改为男</span>
+
+<span class="token comment">//1. 加载mysql模块</span>
+<span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2. 创建mysql链接对象</span>
+<span class="token keyword">const</span> conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>
+    user<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    password<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    database<span class="token punctuation">:</span> <span class="token string">'study'</span><span class="token punctuation">,</span>
+    port<span class="token punctuation">:</span> <span class="token number">3306</span>  <span class="token comment">// 设置mysql服务器的端口号，默认的3306可以省略</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//3. 链接mysql服务器</span>
+conn<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//4. 执行SQL语句</span>
+<span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">&quot;update student set sname='初音未来',sgender='男' where sno=6&quot;</span><span class="token punctuation">;</span>
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//5. 关闭链接</span>
+conn<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>占位符模式：</p> <p>数据修改通常需要两个占位符。 占位符1是要修改的数据，对象形式，属性是数据表字段；占位符2是修改条件，通常是主键值</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//目标: 将学号为6的学生姓名改为初音未来，性别改为男</span>
+
+<span class="token comment">//1. 加载mysql模块</span>
+<span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2. 创建mysql链接对象</span>
+<span class="token keyword">const</span> conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>
+    user<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    password<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    database<span class="token punctuation">:</span> <span class="token string">'study'</span><span class="token punctuation">,</span>
+    port<span class="token punctuation">:</span> <span class="token number">3306</span>  <span class="token comment">// 设置mysql服务器的端口号，默认的3306可以省略</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//3. 链接mysql服务器</span>
+conn<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//4. 执行SQL语句 --- 占位符形式</span>
+<span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">&quot;update student set ? where sno=?&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//set 之后是要修改的数据，需要使用对象形式，下标是数据表的字段名</span>
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    sname<span class="token punctuation">:</span> <span class="token string">&quot;未来战士&quot;</span><span class="token punctuation">,</span>
+    sgender<span class="token punctuation">:</span> <span class="token string">&quot;女&quot;</span><span class="token punctuation">,</span>
+    sage<span class="token punctuation">:</span> <span class="token number">20</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> sno <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+<span class="token comment">//当sql语句中出现多个占位符时，参数可以使用数组来设置</span>
+<span class="token comment">//数组中的单元会按照顺序填充到sql语句的？位置</span>
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> <span class="token punctuation">[</span>obj<span class="token punctuation">,</span> sno<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//5. 关闭链接</span>
+conn<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><h2 id="_9-6-删除-delete"><a href="#_9-6-删除-delete" aria-hidden="true" class="header-anchor">#</a> 9.6 删除 --- delete</h2> <p>==执行删除类型的SQL语句，查询结果（result）是一个对象，该对象中有 affectedRows 属性==</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//目标: 将学号为6的学生删除</span>
+
+<span class="token comment">//1. 加载mysql模块</span>
+<span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2. 创建mysql链接对象</span>
+<span class="token keyword">const</span> conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>
+    user<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    password<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    database<span class="token punctuation">:</span> <span class="token string">'study'</span><span class="token punctuation">,</span>
+    port<span class="token punctuation">:</span> <span class="token number">3306</span>  <span class="token comment">// 设置mysql服务器的端口号，默认的3306可以省略</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//3. 链接mysql服务器</span>
+conn<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//4. 执行SQL语句</span>
+<span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">'delete from student where sno=6'</span><span class="token punctuation">;</span>
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//5. 关闭链接</span>
+conn<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>占位符模式：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//目标: 将学号为6的学生删除</span>
+
+<span class="token comment">//1. 加载mysql模块</span>
+<span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2. 创建mysql链接对象</span>
+<span class="token keyword">const</span> conn <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token punctuation">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>
+    user<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    password<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+    database<span class="token punctuation">:</span> <span class="token string">'study'</span><span class="token punctuation">,</span>
+    port<span class="token punctuation">:</span> <span class="token number">3306</span>  <span class="token comment">// 设置mysql服务器的端口号，默认的3306可以省略</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//3. 链接mysql服务器</span>
+conn<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//4. 执行SQL语句 --- 占位符形式</span>
+<span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">'delete from student where sno=?'</span><span class="token punctuation">;</span>
+conn<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> 
+
+
+<span class="token comment">//5. 关闭链接</span>
+conn<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h1 id="_10-node中的模块化"><a href="#_10-node中的模块化" aria-hidden="true" class="header-anchor">#</a> 10. Node中的模块化</h1> <h2 id="_10-1-什么是模块化"><a href="#_10-1-什么是模块化" aria-hidden="true" class="header-anchor">#</a> 10.1 什么是模块化</h2> <ul><li>js设计之初只是为了实现表单验证这样的简单功能，没设计模块化方案，所以js天生不支持模块化</li> <li>不支持模块化简单来说就是在一个js文件内不能引入其他js文件</li> <li>为了让js支持模块化，一些大神自己编写底层库文件，让js开始支持模块化</li> <li>js模块化规范有四种标准： AMD   CMD   <strong>CommonJS</strong>   ES6</li> <li>Node属于CommonJS标准</li> <li>使用模块化可以很好的解决变量、函数名冲突问题，也能灵活的解决文件依赖问题</li> <li>没有模块化，不允许一个js文件引入另外的JS，有了模块化，就允许一个js文件引入其他的js文件</li></ul> <h2 id="_10-2-全局作用域和局部作用域"><a href="#_10-2-全局作用域和局部作用域" aria-hidden="true" class="header-anchor">#</a> 10.2 全局作用域和局部作用域</h2> <p>局部作用域（模块的作用域）：</p> <ul><li>一个js文件就是一个模块</li> <li>在一个js文件中定义的属性（变量、常量）和方法默认都只能在当前js文件中使用</li></ul> <p>案例： 创建index.js、user.js两个模块。 user.js 模块中定义属性和方法，index.js导入user.js模块</p> <p>导入之后，输出user，并不能得到user中的变量、常量等。</p> <p>全局作用域：</p> <ul><li>在js文件中声明的属性和方法如果都挂载到global对象下；当其他js文件导入该模块后，就能使用该模块下的属性和方法了。</li></ul> <p>案例： 创建index.js、game.js两个模块。 game.js 模块中定义属性和方法并挂载到global对象下，index.js导入game.js模块</p> <p>user.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>global<span class="token punctuation">.</span>username <span class="token operator">=</span> <span class="token string">'zs'</span><span class="token punctuation">;</span>
+global<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+global<span class="token punctuation">.</span><span class="token function-variable function">t</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>index.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 引入（加载）user.js</span>
+<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./user.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>global<span class="token punctuation">.</span>username<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// zs</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>这样可以实现模块化，但是不好。可能会污染（覆盖原有的变量）全局变量</p> <h2 id="_10-3-module-exports导出属性和方法"><a href="#_10-3-module-exports导出属性和方法" aria-hidden="true" class="header-anchor">#</a> 10.3 module.exports导出属性和方法</h2> <ul><li>将变量、对象、函数等挂载到global对象上并不推荐，因为容易造成变量污染。</li> <li>推荐使用 module.exports 导出模块中定义好的变量、对象、方法</li> <li>使用require加载（导入）模块后，就能使用模块中定义好的变量、对象、方法了</li></ul> <p>案例: user.js中定义变量、对象、方法，最后使用 module.exports 导出</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> username <span class="token operator">=</span> <span class="token string">'lisi'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">abcd</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1234</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 使用Node提供的导出模块的方法</span>
+<span class="token comment">// module.exports = {</span>
+<span class="token comment">//     username: username,</span>
+<span class="token comment">//     age: age,</span>
+<span class="token comment">//     abcd: abcd</span>
+<span class="token comment">// };</span>
+<span class="token comment">// ES6 新语法，对象中属性名和变量名一样，可以省略 “:value”</span>
+<span class="token comment">// 具体写法如下</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    username<span class="token punctuation">,</span>
+    age<span class="token punctuation">,</span>
+    abcd
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="_10-4-封装-db-js-模块"><a href="#_10-4-封装-db-js-模块" aria-hidden="true" class="header-anchor">#</a> 10.4 封装 db.js 模块</h2> <p>核心思想： mysql操作流程是固定的，尤其是前三步。将前三部封装到一个模块，导出链接对象。 链接对象就可以调用query方法执行sql语句，也能执行end方法关闭链接</p> <p>在其他需要进行数据库操作的文件中加载 db.js 模块</p></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">7/18/2019, 2:26:44 AM</span></div></footer> <!----> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a9f6d8ec.js" defer></script><script src="/assets/js/4.f605a52d.js" defer></script><script src="/assets/js/1.a2510d10.js" defer></script><script src="/assets/js/29.a10472bb.js" defer></script>
+  </body>
+</html>

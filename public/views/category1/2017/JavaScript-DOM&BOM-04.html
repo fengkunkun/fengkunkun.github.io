@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript-DOM&amp;BOM-04 | Sumind&#39;s Blog</title>
+    <meta name="description" content="做一个有灵魂的前端工程师">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.75dd9f78.css" as="style"><link rel="preload" href="/assets/js/app.a9f6d8ec.js" as="script"><link rel="preload" href="/assets/js/4.f605a52d.js" as="script"><link rel="preload" href="/assets/js/1.a2510d10.js" as="script"><link rel="preload" href="/assets/js/21.b1896877.js" as="script"><link rel="prefetch" href="/assets/js/10.96e33a09.js"><link rel="prefetch" href="/assets/js/11.ce91667a.js"><link rel="prefetch" href="/assets/js/12.3fed3056.js"><link rel="prefetch" href="/assets/js/13.41117cae.js"><link rel="prefetch" href="/assets/js/14.0a836303.js"><link rel="prefetch" href="/assets/js/15.c7a70042.js"><link rel="prefetch" href="/assets/js/16.eda894ef.js"><link rel="prefetch" href="/assets/js/17.9972567d.js"><link rel="prefetch" href="/assets/js/18.5c2087d9.js"><link rel="prefetch" href="/assets/js/19.9e5909ec.js"><link rel="prefetch" href="/assets/js/20.81cf4463.js"><link rel="prefetch" href="/assets/js/22.3058e867.js"><link rel="prefetch" href="/assets/js/23.76b75888.js"><link rel="prefetch" href="/assets/js/24.cb2b6224.js"><link rel="prefetch" href="/assets/js/25.66f6d5cc.js"><link rel="prefetch" href="/assets/js/26.d3ba5339.js"><link rel="prefetch" href="/assets/js/27.1b1cd18a.js"><link rel="prefetch" href="/assets/js/28.d0ca9393.js"><link rel="prefetch" href="/assets/js/29.a10472bb.js"><link rel="prefetch" href="/assets/js/30.13388d66.js"><link rel="prefetch" href="/assets/js/31.cd6ba917.js"><link rel="prefetch" href="/assets/js/32.097ed36d.js"><link rel="prefetch" href="/assets/js/33.e6ea0697.js"><link rel="prefetch" href="/assets/js/34.896ec5ef.js"><link rel="prefetch" href="/assets/js/35.9bd942f7.js"><link rel="prefetch" href="/assets/js/36.2b774afe.js"><link rel="prefetch" href="/assets/js/37.098262ce.js"><link rel="prefetch" href="/assets/js/38.6a5cbac5.js"><link rel="prefetch" href="/assets/js/39.03cc91d2.js"><link rel="prefetch" href="/assets/js/40.8d0a7377.js"><link rel="prefetch" href="/assets/js/41.dea6138e.js"><link rel="prefetch" href="/assets/js/42.555d373d.js"><link rel="prefetch" href="/assets/js/43.b47eb251.js"><link rel="prefetch" href="/assets/js/44.1ffd7b5b.js"><link rel="prefetch" href="/assets/js/45.cfb5da00.js"><link rel="prefetch" href="/assets/js/46.a56b9b85.js"><link rel="prefetch" href="/assets/js/47.4f781dff.js"><link rel="prefetch" href="/assets/js/48.4f542143.js"><link rel="prefetch" href="/assets/js/49.5c2eb801.js"><link rel="prefetch" href="/assets/js/5.e7fbaf2f.js"><link rel="prefetch" href="/assets/js/50.4fb88d7e.js"><link rel="prefetch" href="/assets/js/51.9028fef6.js"><link rel="prefetch" href="/assets/js/52.abb81def.js"><link rel="prefetch" href="/assets/js/6.896bf5be.js"><link rel="prefetch" href="/assets/js/7.b5260bec.js"><link rel="prefetch" href="/assets/js/8.5b3b73d8.js"><link rel="prefetch" href="/assets/js/9.eba5c3f6.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.2553b2f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.75dd9f78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/01.jpg" alt="Sumind's Blog" class="logo"> <span class="site-name">Sumind's Blog</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">是否开启夜览模式？</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript-DOM&amp;BOM-04</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#bom介绍" class="sidebar-link">BOM介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#概念" class="sidebar-link">概念</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#bom顶级对象" class="sidebar-link">BOM顶级对象</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#页面加载事件" class="sidebar-link">页面加载事件</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#定时器" class="sidebar-link">定时器</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#location对象" class="sidebar-link">location对象</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#其他属性" class="sidebar-link">其他属性</a></li></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#offset【获取元素位置和大小】" class="sidebar-link">offset【获取元素位置和大小】</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#client【获取元素位置和大小】" class="sidebar-link">client【获取元素位置和大小】</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#scroll【获取元素位置和大小】" class="sidebar-link">scroll【获取元素位置和大小】</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#练习" class="sidebar-link">练习</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#拖拽" class="sidebar-link">拖拽</a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#" class="sidebar-link"></a></li><li class="sidebar-sub-header"><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-04.html#放大镜" class="sidebar-link">放大镜</a></li></ul></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>JavaScript-DOM&amp;BOM-04</h1> <hr> <div data-v-0b496ca7><i class="iconfont reco-account" data-v-0b496ca7><span data-v-0b496ca7>Sumind</span></i> <i class="iconfont reco-date" data-v-0b496ca7><span data-v-0b496ca7>2017-6-26</span></i> <!----> <!----></div></div> <div class="content__default"><h5 id="javascript-dom-bom-04"><a href="#javascript-dom-bom-04" aria-hidden="true" class="header-anchor">#</a> JavaScript-DOM&amp;BOM-04</h5> <p>JavaScript-DOM&amp;BOM</p> <h1 id="javascript"><a href="#javascript" aria-hidden="true" class="header-anchor">#</a> JavaScript</h1> <h2 id="bom介绍"><a href="#bom介绍" aria-hidden="true" class="header-anchor">#</a> BOM介绍</h2> <blockquote><h3 id="概念"><a href="#概念" aria-hidden="true" class="header-anchor">#</a> 概念</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>BOM（Browser Object Model）即浏览器对象模型。
+本质： 通过对象抽象浏览器中的一些功能 例如：（刷新页面，alert,confirm,pormpt,跳转 ...）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="bom顶级对象"><a href="#bom顶级对象" aria-hidden="true" class="header-anchor">#</a> BOM顶级对象</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>window对象是js中的顶级对象，定义在全局作用域中的变量、函数都会变成window对象的属性和方法，在调用的时候可以省略window。
+
+☞备注：
+	  1.文档document也属于window对象中的一个
+	  2.window代表整个窗口
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="页面加载事件"><a href="#页面加载事件" aria-hidden="true" class="header-anchor">#</a> 页面加载事件</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>1. 
+window.onload = function() {}   ===&gt; 页面加载完成：页面上的所有元素都创建完成，并且引用的外部资源都下载完毕（js,css）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="定时器"><a href="#定时器" aria-hidden="true" class="header-anchor">#</a> 定时器</h3> <ul><li><h4 id="settimeout"><a href="#settimeout" aria-hidden="true" class="header-anchor">#</a> setTimeout()</h4></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>隔一段时间执行，只执行一次  ==》定时炸弹
+
+☞ 使用
+	window.setTimeout(function, time)；
+	function： 处理程序，可以是匿名函数
+	time： 间隔时间，毫秒
+	
+☞ 清除定时器
+    	 1. setTimeout有一个返回值,代表当前定时器的标识
+    	 2. clearTimeOut(定时器标识)
+	 
+案例：
+	 删除提示效果
+	 过程：
+	 	 点击按钮，显示一个层，3秒以后自动消失
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li><h4 id="setinterval"><a href="#setinterval" aria-hidden="true" class="header-anchor">#</a> setInterval()</h4></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>隔一段时间执行，并且会重复执行 <span class="token operator">===</span>》 类似于闹钟
+
+☞ 使用
+window<span class="token punctuation">.</span><span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">,</span> time<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span><span class="token punctuation">:</span> 处理程序，可以是匿名函数
+time：时间，毫秒
+
+☞ 清除定时器
+	<span class="token function">clearInterval</span><span class="token punctuation">(</span>定时器id<span class="token punctuation">)</span>；
+	
+☞ 练习：	
+<span class="token number">1.</span>倒计时案例
+<span class="token number">2.</span>动画效果 
+	 offsetLeft<span class="token punctuation">:</span> 水平偏移量相对<span class="token constant">HTML</span>
+	 offsetTop： 垂直偏移量相对<span class="token constant">HTML</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="location对象"><a href="#location对象" aria-hidden="true" class="header-anchor">#</a> location对象</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code>location对象是window对象下的一个属性，使用location可以设置或者获取浏览器地址栏中的url
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="属性"><a href="#属性" aria-hidden="true" class="header-anchor">#</a> 属性</h4> <div class="language-js line-numbers-mode"><pre class="language-js"><code>href：实现页面跳转
+获取地址 ：location<span class="token punctuation">.</span>href
+设置地址 ：location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">&quot;http://www.baidu.com&quot;</span>
+
+如果希望在新窗口中打开页面：
+	 window<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'url路径'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="方法"><a href="#方法" aria-hidden="true" class="header-anchor">#</a> 方法</h4> <div class="language-js line-numbers-mode"><pre class="language-js"><code>☞ <span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  委派 ： 作用于href的作用一样，可以实现页面跳转
+location<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token string">&quot;http://www.baidu.com&quot;</span><span class="token punctuation">)</span>
+
+☞ <span class="token function">replace</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 替换： 跳转页面，浏览器不记录历史，浏览器中后退按钮无法使用
+location<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">&quot;http://www.baidu.com&quot;</span><span class="token punctuation">)</span>
+
+☞ <span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 重新加载： 类似于 <span class="token constant">F5</span>
+备注：
+	  location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>  强制从服务器获取页面
+	  location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> 从浏览器本地缓存中获取页面
+	  
+	  <span class="token constant">F5</span>，刷新页面从缓存中加载
+	  Ctrl <span class="token operator">+</span> <span class="token constant">F5</span> 强制刷新页面（从服务器获取页面）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="其他属性"><a href="#其他属性" aria-hidden="true" class="header-anchor">#</a> 其他属性</h3></blockquote> <blockquote><ul><li><h4 id="url组成"><a href="#url组成" aria-hidden="true" class="header-anchor">#</a> url组成</h4></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>统一资源定位符（网站地址）
+
+scheme<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>host<span class="token punctuation">:</span>port<span class="token operator">/</span>path<span class="token operator">?</span>query#fragment
+例如：
+	http<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com<span class="token punctuation">:</span>port<span class="token operator">/</span>index<span class="token punctuation">.</span>html<span class="token operator">?</span>name<span class="token operator">=</span>zs<span class="token operator">&amp;</span>age<span class="token operator">=</span><span class="token number">18</span>#bottom
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li><h4 id="详解"><a href="#详解" aria-hidden="true" class="header-anchor">#</a> 详解</h4></li> <li><h4 id="scheme"><a href="#scheme" aria-hidden="true" class="header-anchor">#</a> scheme</h4></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>通信协议，常用的http，ftp,maito等
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><h5 id="host"><a href="#host" aria-hidden="true" class="header-anchor">#</a> host</h5></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>主机，服务器域名系统（DNS）或者IP地址
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><h5 id="port"><a href="#port" aria-hidden="true" class="header-anchor">#</a> port</h5></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>端口号，默认端口号 8080
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><h5 id="path"><a href="#path" aria-hidden="true" class="header-anchor">#</a> path</h5></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>路径，代表一个具体的文件目录或者一个文件夹
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="属性介绍"><a href="#属性介绍" aria-hidden="true" class="header-anchor">#</a> 属性介绍</h4> <div class="language-js line-numbers-mode"><pre class="language-js"><code>location<span class="token punctuation">.</span>host   <span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token function">主机名</span><span class="token punctuation">(</span>域名<span class="token punctuation">)</span>
+location<span class="token punctuation">.</span>pathname   <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> 文件路径
+location<span class="token punctuation">.</span>protocol   <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> 协议
+location<span class="token punctuation">.</span>port  <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">&gt;</span> 端口
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></blockquote> <h2 id="offset【获取元素位置和大小】"><a href="#offset【获取元素位置和大小】" aria-hidden="true" class="header-anchor">#</a> offset【获取元素位置和大小】</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code>☞ dom<span class="token punctuation">.</span>offsetLeft  <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> 水平偏移
+☞ dom<span class="token punctuation">.</span>offsetTop   <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> 垂直偏移
+备注：
+   <span class="token number">1.</span>offsetLeft默认是相对整个<span class="token constant">HTML</span>标签，如果其父元素是一个定位元素那么就相对其父元素（类似于css中的绝对定位）
+
+☞ dom<span class="token punctuation">.</span>offsetWidth  <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> 获取当前元素在浏览器中的实际宽度（内容<span class="token operator">+</span>边框<span class="token operator">+</span>内边距）   
+☞ dom<span class="token punctuation">.</span>offsetHeight <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> 获取当前元素在浏览器中的实际高度（内容<span class="token operator">+</span>边框<span class="token operator">+</span>内边距）   
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><img src="E:/%E9%BB%91%E9%A9%AC%E5%AD%A6%E4%B9%A0/%E5%B0%B1%E4%B8%9A%E7%8F%AD/wap%20API/05/05/01-%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/img/1552133513970.png" alt="1552133513970"></p> <h2 id="client【获取元素位置和大小】"><a href="#client【获取元素位置和大小】" aria-hidden="true" class="header-anchor">#</a> client【获取元素位置和大小】</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>☞ dom.clientLeft  --&gt; 获取元素边框的左边框的宽度
+☞ dom.clientTop ---&gt;  获取元素上边框的宽度
+
+☞ dom.clientWidth   --&gt;  元素宽度【不包括边框，但是包括内边距】
+☞ dom.clientHeight  --&gt;  元素高度【不包括边框，但是包括内边距】
+
+总结：
+     clientHeight = 内容区域 + padding
+     clientWidth = 内容区域 + padding
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="E:/%E9%BB%91%E9%A9%AC%E5%AD%A6%E4%B9%A0/%E5%B0%B1%E4%B8%9A%E7%8F%AD/wap%20API/05/05/01-%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/img/1552133599545.png" alt="1552133599545"></p> <h2 id="scroll【获取元素位置和大小】"><a href="#scroll【获取元素位置和大小】" aria-hidden="true" class="header-anchor">#</a> scroll【获取元素位置和大小】</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>☞ dom.scrollLeft   ---&gt;
+☞ dom.scrollTop    ---&gt;滚动条向上滚动的距离【内容滚出去的距离】  [滚动事件 onscroll]
+
+☞ dom.scrollWidth   ---&gt; 
+	 1. 如果内容区域小于当前元素，那么scrollWidth就代表当前元素大小【算内边距，不算边框】
+	 2. 如果内容区域大于当前元素，那么scrollWidth就等于内容区域大小 + 左内边距
+	 
+☞ dom.scrollHeight  ---&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><img src="E:/%E9%BB%91%E9%A9%AC%E5%AD%A6%E4%B9%A0/%E5%B0%B1%E4%B8%9A%E7%8F%AD/wap%20API/05/05/01-%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/img/1552133556593.png" alt="1552133556593"></p> <h2 id="练习"><a href="#练习" aria-hidden="true" class="header-anchor">#</a> 练习</h2> <ul><li><h3 id="拖拽"><a href="#拖拽" aria-hidden="true" class="header-anchor">#</a> 拖拽</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>鼠标按下事件： onmousedown
+
+鼠标抬起事件： onmouseup
+
+鼠标移动事件： onmousemove
+
+案例思路：
+ 1. 鼠标按下时候的位置和鼠标离开时候的位置是相同的
+ 2. 鼠标按下时候的位置 =  鼠标在页面中的位置（e.pagex） - 当前元素在页面中的位置（offsetLeft）
+ 3. 元素最后移动的位置 = 鼠标移动后的位置 - 鼠标按下时候的位置
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id=""><a href="#" aria-hidden="true" class="header-anchor">#</a></h3></li> <li><h3 id="放大镜"><a href="#放大镜" aria-hidden="true" class="header-anchor">#</a> 放大镜</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code> <span class="token number">1.</span> onmouseenter 和 onmouseleave 属于一组，不会有事件冒泡
+ <span class="token number">2.</span> onmouseover 和 onmouseout 属性一组，有事件冒泡
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="-2"><a href="#-2" aria-hidden="true" class="header-anchor">#</a></h4></li></ul></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">7/18/2019, 2:26:44 AM</span></div></footer> <!----> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a9f6d8ec.js" defer></script><script src="/assets/js/4.f605a52d.js" defer></script><script src="/assets/js/1.a2510d10.js" defer></script><script src="/assets/js/21.b1896877.js" defer></script>
+  </body>
+</html>

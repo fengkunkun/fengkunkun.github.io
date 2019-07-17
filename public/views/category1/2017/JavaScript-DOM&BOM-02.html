@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript-DOM&amp;BOM-02 | Sumind&#39;s Blog</title>
+    <meta name="description" content="做一个有灵魂的前端工程师">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.75dd9f78.css" as="style"><link rel="preload" href="/assets/js/app.a9f6d8ec.js" as="script"><link rel="preload" href="/assets/js/4.f605a52d.js" as="script"><link rel="preload" href="/assets/js/1.a2510d10.js" as="script"><link rel="preload" href="/assets/js/19.9e5909ec.js" as="script"><link rel="prefetch" href="/assets/js/10.96e33a09.js"><link rel="prefetch" href="/assets/js/11.ce91667a.js"><link rel="prefetch" href="/assets/js/12.3fed3056.js"><link rel="prefetch" href="/assets/js/13.41117cae.js"><link rel="prefetch" href="/assets/js/14.0a836303.js"><link rel="prefetch" href="/assets/js/15.c7a70042.js"><link rel="prefetch" href="/assets/js/16.eda894ef.js"><link rel="prefetch" href="/assets/js/17.9972567d.js"><link rel="prefetch" href="/assets/js/18.5c2087d9.js"><link rel="prefetch" href="/assets/js/20.81cf4463.js"><link rel="prefetch" href="/assets/js/21.b1896877.js"><link rel="prefetch" href="/assets/js/22.3058e867.js"><link rel="prefetch" href="/assets/js/23.76b75888.js"><link rel="prefetch" href="/assets/js/24.cb2b6224.js"><link rel="prefetch" href="/assets/js/25.66f6d5cc.js"><link rel="prefetch" href="/assets/js/26.d3ba5339.js"><link rel="prefetch" href="/assets/js/27.1b1cd18a.js"><link rel="prefetch" href="/assets/js/28.d0ca9393.js"><link rel="prefetch" href="/assets/js/29.a10472bb.js"><link rel="prefetch" href="/assets/js/30.13388d66.js"><link rel="prefetch" href="/assets/js/31.cd6ba917.js"><link rel="prefetch" href="/assets/js/32.097ed36d.js"><link rel="prefetch" href="/assets/js/33.e6ea0697.js"><link rel="prefetch" href="/assets/js/34.896ec5ef.js"><link rel="prefetch" href="/assets/js/35.9bd942f7.js"><link rel="prefetch" href="/assets/js/36.2b774afe.js"><link rel="prefetch" href="/assets/js/37.098262ce.js"><link rel="prefetch" href="/assets/js/38.6a5cbac5.js"><link rel="prefetch" href="/assets/js/39.03cc91d2.js"><link rel="prefetch" href="/assets/js/40.8d0a7377.js"><link rel="prefetch" href="/assets/js/41.dea6138e.js"><link rel="prefetch" href="/assets/js/42.555d373d.js"><link rel="prefetch" href="/assets/js/43.b47eb251.js"><link rel="prefetch" href="/assets/js/44.1ffd7b5b.js"><link rel="prefetch" href="/assets/js/45.cfb5da00.js"><link rel="prefetch" href="/assets/js/46.a56b9b85.js"><link rel="prefetch" href="/assets/js/47.4f781dff.js"><link rel="prefetch" href="/assets/js/48.4f542143.js"><link rel="prefetch" href="/assets/js/49.5c2eb801.js"><link rel="prefetch" href="/assets/js/5.e7fbaf2f.js"><link rel="prefetch" href="/assets/js/50.4fb88d7e.js"><link rel="prefetch" href="/assets/js/51.9028fef6.js"><link rel="prefetch" href="/assets/js/52.abb81def.js"><link rel="prefetch" href="/assets/js/6.896bf5be.js"><link rel="prefetch" href="/assets/js/7.b5260bec.js"><link rel="prefetch" href="/assets/js/8.5b3b73d8.js"><link rel="prefetch" href="/assets/js/9.eba5c3f6.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.2553b2f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.75dd9f78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/01.jpg" alt="Sumind's Blog" class="logo"> <span class="site-name">Sumind's Blog</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">是否开启夜览模式？</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      Blog
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/技术.html" class="nav-link"><i class="iconfont undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/category/总结.html" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  生活
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript-DOM&amp;BOM-02</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-02.html#innertext-和-innerhmtl" class="sidebar-link">innerText 和 innerHMTL</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-02.html#textcontent" class="sidebar-link">textContent</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-02.html#操作元素样式" class="sidebar-link">操作元素样式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-02.html#操作表单属性" class="sidebar-link">操作表单属性</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-02.html#文本框事件" class="sidebar-link">文本框事件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-02.html#鼠标事件" class="sidebar-link">鼠标事件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2017/JavaScript-DOM&amp;BOM-02.html#标签属性操作方式" class="sidebar-link">标签属性操作方式</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>JavaScript-DOM&amp;BOM-02</h1> <hr> <div data-v-0b496ca7><i class="iconfont reco-account" data-v-0b496ca7><span data-v-0b496ca7>Sumind</span></i> <i class="iconfont reco-date" data-v-0b496ca7><span data-v-0b496ca7>2017-6-23</span></i> <!----> <!----></div></div> <div class="content__default"><h5 id="javascript-dom-bom-02"><a href="#javascript-dom-bom-02" aria-hidden="true" class="header-anchor">#</a> JavaScript-DOM&amp;BOM-02</h5> <p>JavaScript-DOM&amp;BOM</p> <h1 id="javascript-dom操作"><a href="#javascript-dom操作" aria-hidden="true" class="header-anchor">#</a> JavaScript-DOM操作</h1> <h2 id="innertext-和-innerhmtl"><a href="#innertext-和-innerhmtl" aria-hidden="true" class="header-anchor">#</a> innerText 和 innerHMTL</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token number">1.</span>innerText 和 innerHTML
+
+<span class="token comment">//获取方式</span>
+通过innerText获取<span class="token punctuation">,</span>仅仅包含文本
+通过innerHTML获取，若有子标签时，会包含文本和子标签
+
+备注：
+	 <span class="token number">1.</span> 在老版本火狐浏览器中不支持innerText
+     <span class="token number">2.</span> 在老版本火狐浏览器中使用textContent设置获取标签内容信息
+     <span class="token number">3.</span> <span class="token number">2016</span>年将innerText正式纳入标准属性
+     
+
+<span class="token comment">//设置结果</span>
+通过innerText设置<span class="token punctuation">,</span>若设置中包含了子标签，该标签不会被渲染而是当做普通文本显示
+通过innerHTML设置<span class="token punctuation">,</span>若设置中包含了子标签，该标签会被渲染显示
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="textcontent"><a href="#textcontent" aria-hidden="true" class="header-anchor">#</a> textContent</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token number">1.</span> textContent和 innerText
+
+相同点：获取的都是文本，将html标签过滤掉
+
+不同点：
+textContent在获取内容的时候，将空格和换行效果都显示
+innerText 在获取内容的时候，没有空格和换行效果
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="操作元素样式"><a href="#操作元素样式" aria-hidden="true" class="header-anchor">#</a> 操作元素样式</h2> <blockquote><div class="language-js line-numbers-mode"><pre class="language-js"><code>语法：
+	<span class="token number">1.</span>dom<span class="token punctuation">.</span>className <span class="token operator">=</span> <span class="token string">'类名'</span><span class="token punctuation">;</span>
+	<span class="token number">2.</span>dom<span class="token punctuation">.</span>style<span class="token punctuation">.</span>属性 <span class="token operator">=</span> 值<span class="token punctuation">;</span>
+备注：
+	<span class="token number">1.</span>通过style属性方式设置背景色 backgroundColor
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id=""><a href="#" aria-hidden="true" class="header-anchor">#</a></h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>H5中新增的方式：
+	 Dom.classList.add()       添加类名
+	 Dom.classList.remove()    移除类名
+	 Dom.classList.toggle()    切换类名
+	 Dom.classList.contains()  是否包含
+	 
+案例：
+	1. 使用className方式实现tab栏切换
+	2. 使用classListf方式实现tab栏切换
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></blockquote> <h2 id="操作表单属性"><a href="#操作表单属性" aria-hidden="true" class="header-anchor">#</a> 操作表单属性</h2> <blockquote><ul><li>value属性【购物车案例】</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>  <span class="token number">1.</span> 获取表单控件中的值
+<span class="token operator">&lt;</span>input type <span class="token operator">=</span> <span class="token string">'text'</span> value <span class="token operator">=</span> <span class="token string">'123'</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">&quot;text/javascript&quot;</span><span class="token operator">&gt;</span>
+		<span class="token keyword">var</span> input <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'input'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token function">alert</span><span class="token punctuation">(</span>input<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+  <span class="token number">2.</span> 设置表单控件的值
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">&quot;text/javascript&quot;</span><span class="token operator">&gt;</span>
+		<span class="token keyword">var</span> input <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'input'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       input<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">'值'</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>disabled属性 readOnly属性【同意完成注册案例】</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>  <span class="token number">1.</span> 获取当前控件是否被禁用
+  dom<span class="token punctuation">.</span>disabled  <span class="token operator">--</span><span class="token operator">&gt;</span> 如果返回<span class="token boolean">false</span>，代表没有被禁用，否则被禁用
+  dom<span class="token punctuation">.</span>readOnly  <span class="token operator">--</span><span class="token operator">&gt;</span> 如果返回<span class="token boolean">false</span>，代表没有被禁用，否则被禁用
+
+  <span class="token number">2.</span> 设置控件是否禁用
+  dom<span class="token punctuation">.</span>disabled <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token operator">|</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  dom<span class="token punctuation">.</span>readOnly <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token operator">|</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>checked属性</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>  <span class="token number">1.</span> 获取控件是否被选中
+  dom<span class="token punctuation">.</span>checked   <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">true</span> （选中）   <span class="token operator">|</span> <span class="token boolean">false</span>  <span class="token punctuation">(</span>未选中<span class="token punctuation">)</span>
+
+  <span class="token number">2.</span> 设置控件是否被选中
+  dom<span class="token punctuation">.</span>checked <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token operator">|</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>selected属性</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>  <span class="token number">1.</span> 获取下拉列表是否被选中
+  dom<span class="token punctuation">.</span>selected  <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">true</span> <span class="token punctuation">(</span>选中<span class="token punctuation">)</span>  <span class="token operator">|</span> <span class="token boolean">false</span> <span class="token punctuation">(</span>未选中<span class="token punctuation">)</span>
+
+  <span class="token number">2.</span> 设置控件是否被选中
+	dom<span class="token punctuation">.</span>selected  <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token punctuation">(</span>选中<span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token boolean">false</span> <span class="token punctuation">(</span>未选中<span class="token punctuation">)</span>
+备注：
+  	<span class="token number">1.</span> 下拉列表默认是从第一项开始显示的，默认第一项是被选中的状态
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></blockquote> <h2 id="文本框事件"><a href="#文本框事件" aria-hidden="true" class="header-anchor">#</a> 文本框事件</h2> <blockquote><ul><li>onfocus 获取焦点</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>dom<span class="token punctuation">.</span>onfocus  <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> 获取焦点时候触发事件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>onblur 失去焦点</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>dom<span class="token punctuation">.</span>onblur    <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> 失去焦点触发事件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></blockquote> <h2 id="鼠标事件"><a href="#鼠标事件" aria-hidden="true" class="header-anchor">#</a> 鼠标事件</h2> <blockquote><ul><li>onmouseenter 鼠标进入事件【没有事件冒泡】</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>dom<span class="token punctuation">.</span><span class="token function-variable function">onmouseenter</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>onmouseleave 鼠标离开事件</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>dom<span class="token punctuation">.</span><span class="token function-variable function">onmouseleave</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+备注：
+onmouseenter 和 onmouseleave 是对应的一组
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>onmouseover   鼠标放到标签之上【会有事件冒泡，少用】</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>dom<span class="token punctuation">.</span><span class="token function-variable function">onmouseover</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>onmouseout    鼠标离开</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>dom<span class="token punctuation">.</span><span class="token function-variable function">onmouseout</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>多个标签注册事件，获取索引方式</li></ul> <div class="language-html line-numbers-mode"><pre class="language-html"><code>实现的功能：
+	  用户点击（鼠标悬停）到标签上，获取该标签对应的索引方式：
+
+   1. 通过给标签（对象）动态添加一个表示索引的属性，并赋值
+   2. 通过代码获取该索引值即可
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></blockquote> <h2 id="标签属性操作方式"><a href="#标签属性操作方式" aria-hidden="true" class="header-anchor">#</a> 标签属性操作方式</h2> <blockquote><ul><li>系统属性</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>☞ 获取属性的值：
+dom<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span>属性名<span class="token punctuation">)</span>；
+备注：
+   	   <span class="token number">1.</span> 通过getAttribute可以获取标签属性对应的值
+       <span class="token number">2.</span> 如果标签没有对应的属性，那么getAttribute返回<span class="token keyword">null</span>
+☞ 设置
+dom<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span>属性名<span class="token punctuation">,</span>值<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 备注：
+ 	<span class="token number">1.</span>通过setAttribute可以给标签添加新的属性
+     <span class="token number">2.</span>如果该标签已经存在某个属性，是对该属性值得修改
+☞ 删除
+dom<span class="token punctuation">.</span><span class="token function">removeAttribute</span><span class="token punctuation">(</span>属性名<span class="token punctuation">)</span>；
+	 备注：
+     	<span class="token number">1.</span> 通过removeAttribute可以将属性移除  	
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>自定义属性</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>概念：以  data<span class="token operator">-</span><span class="token operator">*</span> 开始的属性，为自定义属性
+
+作用：  <span class="token function">保存数据</span><span class="token punctuation">(</span>处理业务中的数据<span class="token punctuation">)</span>
+
+☞ 获取
+	dom<span class="token punctuation">.</span>dataset     <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span>  返回自定义属性的对象【该属性只能获取自定义属性】    
+ dom<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>属性名称  
+	dom<span class="token punctuation">.</span>dataset<span class="token punctuation">[</span><span class="token string">&quot;属性名称&quot;</span><span class="token punctuation">]</span>
+☞ 设置
+	 Dom<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>自定义属性名称<span class="token operator">=</span>值<span class="token punctuation">;</span>
+备注：
+	<span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token punctuation">)</span>也可以用来获取自定义属性
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h4 id="-2"><a href="#-2" aria-hidden="true" class="header-anchor">#</a></h4></blockquote></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">7/18/2019, 2:26:44 AM</span></div></footer> <!----> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a9f6d8ec.js" defer></script><script src="/assets/js/4.f605a52d.js" defer></script><script src="/assets/js/1.a2510d10.js" defer></script><script src="/assets/js/19.9e5909ec.js" defer></script>
+  </body>
+</html>
