@@ -1,0 +1,184 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="前端知识 - DOM"><meta name="keywords" content=""><meta name="author" content="Sumind"><meta name="copyright" content="Sumind"><title>前端知识 - DOM | Sumindの世界</title><link rel="shortcut icon" href="./melody-favicon.ico"><link rel="stylesheet" href="./css/index.css?version=1.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.7.0"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?version=1.7.0"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: './',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#前端知识-DOM"><span class="toc-number">1.</span> <span class="toc-text">前端知识 - DOM</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DOM事件的总结"><span class="toc-number"></span> <span class="toc-text">DOM事件的总结</span></a></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://gitee.com/sumind/picCloud/raw/master/img/Head-portrait.jpg"></div><div class="author-info__name text-center">Sumind</div><div class="author-info__description text-center">人生没有白走的路，每一步都算数</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="./archives"><span class="pull-left">文章</span><span class="pull-right">32</span></a><a class="author-info-articles__categories article-meta" href="./categories"><span class="pull-left">分类</span><span class="pull-right">3</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://gitee.com/sumind/picCloud/raw/master/img/top_img.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="./">Sumindの世界</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">主页</a><a class="site-page" href="/archives">时间轴</a><a class="site-page" href="/gallery">相册</a><a class="site-page" href="/about">关于我</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a></span></div><div id="post-info"><div id="post-title">前端知识 - DOM</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-08-18</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="./categories/%E5%B0%8F%E7%9F%A5%E8%AF%86/">小知识</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h5 id="前端知识-DOM"><a href="#前端知识-DOM" class="headerlink" title="前端知识 - DOM"></a>前端知识 - DOM</h5><p>资料整理</p>
+<a id="more"></a>
+
+
+
+<h2 id="DOM事件的总结"><a href="#DOM事件的总结" class="headerlink" title="DOM事件的总结"></a>DOM事件的总结</h2><p><strong>知识点主要包括以下几个方面：</strong></p>
+<ul>
+<li>基本概念：<code>DOM</code>事件的级别</li>
+</ul>
+<blockquote>
+<p>面试不会直接问你，DOM有几个级别。但会在题目中体现：“请用<code>DOM2</code> ….”。</p>
+</blockquote>
+<ul>
+<li><code>DOM</code>事件模型、<code>DOM</code>事件流</li>
+</ul>
+<blockquote>
+<p>面试官如果问你“<strong>DOM事件模型</strong>”，你不一定知道怎么回事。其实说的就是<strong>捕获和冒泡</strong>。</p>
+</blockquote>
+<p><strong>DOM事件流</strong>，指的是事件传递的<strong>三个阶段</strong>。</p>
+<ul>
+<li>描述<code>DOM</code>事件捕获的具体流程</li>
+</ul>
+<blockquote>
+<p>讲的是事件的传递顺序。参数为<code>false</code>（默认）、参数为<code>true</code>，各自代表事件在什么阶段触发。</p>
+</blockquote>
+<p>能回答出来的人，寥寥无几。也许有些人可以说出一大半，但是一字不落的人，极少。</p>
+<ul>
+<li><code>Event</code>对象的常见应用（<code>Event</code>的常用<code>api</code>方法）</li>
+</ul>
+<blockquote>
+<p><code>DOM</code>事件的知识点，一方面包括事件的流程；另一方面就是：怎么去注册事件，也就是监听用户的交互行为。第三点：在响应时，<code>Event</code>对象是非常重要的。</p>
+</blockquote>
+<p><strong>自定义事件（非常重要）</strong></p>
+<blockquote>
+<p>一般人可以讲出事件和注册事件，但是如果让你讲<strong>自定义事件</strong>，能知道的人，就更少了。</p>
+</blockquote>
+<p><strong>DOM事件的级别</strong></p>
+<blockquote>
+<p><code>DOM</code>事件的级别，准确来说，是<strong>DOM标准</strong>定义的级别。包括：</p>
+</blockquote>
+<p><strong>DOM0的写法：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">element.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>上面的代码是在 <code>js</code> 中的写法；如果要在<code>html</code>中写，写法是：在<code>onclick</code>属性中，加 <code>js</code> 语句。</p>
+</blockquote>
+<p><strong>DOM2的写法：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">element.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>【重要】上面的第三参数中，<strong>true</strong>表示事件在<strong>捕获阶段</strong>触发，<strong>false</strong>表示事件在<strong>冒泡阶段</strong>触发（默认）。如果不写，则默认为false。</p>
+</blockquote>
+<p><strong>DOM3的写法：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">element.addEventListener(<span class="string">'keyup'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>DOM3</code>中，增加了很多事件类型，比如鼠标事件、键盘事件等。</p>
+</blockquote>
+<blockquote>
+<p>PS：为何事件没有<code>DOM1</code>的写法呢？因为，<code>DOM1</code>标准制定的时候，没有涉及与事件相关的内容。</p>
+</blockquote>
+<p><strong>总结</strong>：关于“DOM事件的级别”，能回答出以上内容即可，不会出题目让你做。</p>
+<p><strong>DOM事件模型</strong></p>
+<blockquote>
+<p><code>DOM</code>事件模型讲的就是<strong>捕获和冒泡</strong>，一般人都能回答出来。</p>
+</blockquote>
+<ul>
+<li>捕获：从上往下。</li>
+<li>冒泡：从下（目标元素）往上。</li>
+</ul>
+<p><strong>DOM事件流</strong></p>
+<blockquote>
+<p><code>DOM</code>事件流讲的就是：浏览器在于当前页面做交互时，这个事件是怎么传递到页面上的。</p>
+</blockquote>
+<p><strong>完整的事件流，分三个阶段：</strong></p>
+<ol>
+<li>捕获：从 <code>window</code> 对象传到 目标元素。</li>
+<li>目标阶段：事件通过捕获，到达目标元素，这个阶段就是目标阶段。</li>
+<li>冒泡：从<strong>目标元素</strong>传到 <code>Window</code> 对象。</li>
+</ol>
+<p><img src="http://img.smyhvae.com/20180306_1058.png" alt=""></p>
+<p><img src="http://img.smyhvae.com/20180204_1218.jpg" alt=""></p>
+<p><strong>描述DOM事件捕获的具体流程</strong></p>
+<blockquote>
+<p>很少有人能说完整。</p>
+</blockquote>
+<p><strong>捕获的流程</strong></p>
+<p><img src="http://img.smyhvae.com/20180306_1103.png" alt=""></p>
+<p><strong>说明</strong>：捕获阶段，事件依次传递的顺序是：<code>window</code> –&gt; <code>document</code> –&gt; <code>html</code>–&gt; <code>body</code> –&gt; 父元素、子元素、目标元素。</p>
+<ul>
+<li>PS1：第一个接收到事件的对象是 <strong>window</strong>（有人会说<code>body</code>，有人会说<code>html</code>，这都是错误的）。</li>
+<li>PS2：<code>JS</code>中涉及到<code>DOM</code>对象时，有两个对象最常用：<code>window</code>、<code>doucument</code>。它们俩也是最先获取到事件的。</li>
+</ul>
+<p>代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">"捕获 window"</span>);</span><br><span class="line">&#125;, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">"捕获 document"</span>);</span><br><span class="line">&#125;, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.documentElement.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">"捕获 html"</span>);</span><br><span class="line">&#125;, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.body.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">"捕获 body"</span>);</span><br><span class="line">&#125;, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line">fatherBox.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">"捕获 father"</span>);</span><br><span class="line">&#125;, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line">childBox.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">"捕获 child"</span>);</span><br><span class="line">&#125;, <span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>补充一个知识点：</strong></p>
+<blockquote>
+<p>在 <code>js</code>中：</p>
+</blockquote>
+<ul>
+<li>如果想获取 <code>body</code> 节点，方法是：<code>document.body</code>；</li>
+<li>但是，如果想获取 <code>html</code>节点，方法是<code>document.documentElement</code>。</li>
+</ul>
+<p><strong>冒泡的流程</strong></p>
+<blockquote>
+<p>与捕获的流程相反</p>
+</blockquote>
+<p><strong>Event对象的常见 api 方法</strong></p>
+<blockquote>
+<p>用户做的是什么操作（比如，是敲键盘了，还是点击鼠标了），这些事件基本都是通过<code>Event</code>对象拿到的。这些都比较简单，我们就不讲了。我们来看看下面这几个方法：</p>
+</blockquote>
+<p><strong>方法一</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">event.preventDefault();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>解释：阻止默认事件。</li>
+<li>比如，已知<code>&lt;a&gt;</code>标签绑定了click事件，此时，如果给<code>&lt;a&gt;</code>设置了这个方法，就阻止了链接的默认跳转。</li>
+</ul>
+<p><strong>方法二：阻止冒泡</strong></p>
+<blockquote>
+<p>这个在业务中很常见。</p>
+</blockquote>
+<blockquote>
+<p>有的时候，业务中不需要事件进行冒泡。比如说，业务这样要求：单击子元素做事件<code>A</code>，单击父元素做事件B，如果不阻止冒泡的话，出现的问题是：单击子元素时，子元素和父元素都会做事件<code>A</code>。这个时候，就要用到阻止冒泡了。</p>
+</blockquote>
+<blockquote>
+<p><code>w3c</code>的方法：（火狐、谷歌、<code>IE11</code>）</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">event.stopPropagation();</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>IE10</code>以下则是：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">event.cancelBubble = <span class="literal">true</span>;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>兼容代码如下：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">box3.onclick = <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">     alert(<span class="string">"child"</span>);</span><br><span class="line"></span><br><span class="line">     <span class="comment">//阻止冒泡</span></span><br><span class="line">     event = event || <span class="built_in">window</span>.event;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">if</span> (event &amp;&amp; event.stopPropagation) &#123;</span><br><span class="line">         event.stopPropagation();</span><br><span class="line">     &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">         event.cancelBubble = <span class="literal">true</span>;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>上方代码中，我们对<code>box3</code>进行了阻止冒泡，产生的效果是：事件不会继续传递到 <code>father</code>、<code>grandfather</code>、<code>body</code>了。</p>
+</blockquote>
+<p><strong>方法三：设置事件优先级</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">event.stopImmediatePropagation();</span><br></pre></td></tr></table></figure>
+
+<p>这个方法比较长，一般人没听说过。解释如下：</p>
+<blockquote>
+<p>比如说，我用<code>addEventListener</code>给某按钮同时注册了事件<code>A</code>、事件<code>B</code>。此时，如果我单击按钮，就会依次执行事件A和事件<code>B</code>。现在要求：单击按钮时，只执行事件A，不执行事件<code>B</code>。该怎么做呢？这是时候，就可以用到<code>stopImmediatePropagation</code>方法了。做法是：在事件A的响应函数中加入这句话。</p>
+</blockquote>
+<blockquote>
+<p>大家要记住 <code>event</code> 有这个方法。</p>
+</blockquote>
+<p><strong>属性4、属性5（事件委托中用到）</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">event.currentTarget   <span class="comment">//当前所绑定的事件对象。在事件委托中，指的是【父元素】。</span></span><br><span class="line"></span><br><span class="line">event.target  <span class="comment">//当前被点击的元素。在事件委托中，指的是【子元素】。</span></span><br></pre></td></tr></table></figure>
+
+<p>上面这两个属性，在事件委托中经常用到。</p>
+<blockquote>
+<p><strong>总结</strong>：上面这几项，非常重要，但是容易弄混淆。</p>
+</blockquote>
+<p><strong>自定义事件</strong></p>
+<blockquote>
+<p>自定义事件的代码如下：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">   <span class="keyword">var</span> myEvent = <span class="keyword">new</span> Event(<span class="string">'clickTest'</span>);</span><br><span class="line">   element.addEventListener(<span class="string">'clickTest'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(<span class="string">'smyhvae'</span>);</span><br><span class="line">   &#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//元素注册事件</span></span><br><span class="line">   element.dispatchEvent(myEvent); <span class="comment">//注意，参数是写事件对象 myEvent，不是写 事件名 clickTest</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>上面这个事件是定义完了之后，就直接自动触发了。在正常的业务中，这个事件一般是和别的事件结合用的。比如延时器设置按钮的动作：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myEvent = <span class="keyword">new</span> Event(<span class="string">'clickTest'</span>);</span><br><span class="line"></span><br><span class="line">element.addEventListener(<span class="string">'clickTest'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'smyhvae'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    element.dispatchEvent(myEvent); <span class="comment">//注意，参数是写事件对象 myEvent，不是写 事件名 clickTest</span></span><br><span class="line">&#125;, <span class="number">1000</span>);</span><br></pre></td></tr></table></figure></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Sumind</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://sumind.cn/2017/08/18/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%20-%20DOM/">https://sumind.cn/2017/08/18/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%20-%20DOM/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://sumind.cn">Sumindの世界</a>！</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="./2017/09/08/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%20-%20%E6%A1%86%E6%9E%B6%E5%B0%8F%E5%B8%B8%E8%AF%86/"><i class="fa fa-chevron-left">  </i><span>前端知识 - 框架小常识</span></a></div><div class="next-post pull-right"><a href="./2017/07/25/JavaScript%E7%9F%A5%E8%AF%86%20-%20Generator/"><span>JavaScript知识 - Generator</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(https://gitee.com/sumind/picCloud/raw/master/img/top_img.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2016 - 2020 By Sumind</div><div class="framework-info"><span> - I will be a front-end engineer with soul - </span></div><div class="footer_custom_text">hitokoto</div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="./js/utils.js?version=1.7.0"></script><script src="./js/fancybox.js?version=1.7.0"></script><script src="./js/sidebar.js?version=1.7.0"></script><script src="./js/copy.js?version=1.7.0"></script><script src="./js/fireworks.js?version=1.7.0"></script><script src="./js/transition.js?version=1.7.0"></script><script src="./js/scroll.js?version=1.7.0"></script><script src="./js/head.js?version=1.7.0"></script><script src="./js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="./live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"./live2dw/assets/hijiki.model.json"},"display":{"superSample":2,"width":210,"height":420,"position":"right","hOffset":0,"vOffset":-40},"log":false,"tagMode":false});</script></body></html><script type="text/javascript" color="225,225,225" opacity='0.8' zIndex="-2" count="100" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
