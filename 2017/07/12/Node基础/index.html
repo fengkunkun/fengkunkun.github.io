@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="Node基础"><meta name="keywords" content=""><meta name="author" content="Sumind"><meta name="copyright" content="Sumind"><title>Node基础 | Sumindの世界</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.7.0"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?version=1.7.0"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#Node基础"><span class="toc-number">1.</span> <span class="toc-text">Node基础</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js面试题列表"><span class="toc-number"></span> <span class="toc-text">Node.js面试题列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是错误优先的回调函数？"><span class="toc-number"></span> <span class="toc-text">什么是错误优先的回调函数？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何避免回调地狱"><span class="toc-number"></span> <span class="toc-text">如何避免回调地狱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何用Node监听80端口"><span class="toc-number"></span> <span class="toc-text">如何用Node监听80端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是事件循环"><span class="toc-number"></span> <span class="toc-text">什么是事件循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#哪些工具可以用来保证一致性的代码风格"><span class="toc-number"></span> <span class="toc-text">哪些工具可以用来保证一致性的代码风格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算错误与程序员错误的区别"><span class="toc-number"></span> <span class="toc-text">运算错误与程序员错误的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用NPM有哪些好处？"><span class="toc-number"></span> <span class="toc-text">使用NPM有哪些好处？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是Stub？举个使用场景"><span class="toc-number"></span> <span class="toc-text">什么是Stub？举个使用场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是测试金字塔？"><span class="toc-number"></span> <span class="toc-text">什么是测试金字塔？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#你最喜欢的HTTP框架以及原因"><span class="toc-number"></span> <span class="toc-text">你最喜欢的HTTP框架以及原因</span></a></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://gitee.com/sumind/picCloud/raw/master/img/Head-portrait.jpg"></div><div class="author-info__name text-center">Sumind</div><div class="author-info__description text-center">人生没有白走的路，每一步都算数</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">32</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">3</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://gitee.com/sumind/picCloud/raw/master/img/top_img.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Sumindの世界</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">主页</a><a class="site-page" href="/archives">时间轴</a><a class="site-page" href="/gallery">相册</a><a class="site-page" href="/about">关于我</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a></span></div><div id="post-info"><div id="post-title">Node基础</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-07-12</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/">资料整理</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h5 id="Node基础"><a href="#Node基础" class="headerlink" title="Node基础"></a>Node基础</h5><p>资料整理</p>
+<a id="more"></a>
+
+<h2 id="Node-js面试题列表"><a href="#Node-js面试题列表" class="headerlink" title="Node.js面试题列表"></a>Node.js面试题列表</h2><ul>
+<li>什么是错误优先的回调函数？</li>
+<li>如何避免回调地狱？</li>
+<li>如何用Node来监听80端口？</li>
+<li>什么是事件循环？</li>
+<li>哪些工具可以用来保证一致的编程风格？</li>
+<li>运算错误与程序员错误的区别？</li>
+<li>使用NPM有哪些好处？</li>
+<li>什么是stub？举个使用场景？</li>
+<li>什么是测试金字塔？对于HTTP API，如何利用测试金字塔？</li>
+<li>你最喜欢的HTTP框架，并说明原因？</li>
+</ul>
+<p>现在，我们依次来解答这些问题吧。</p>
+<h3 id="什么是错误优先的回调函数？"><a href="#什么是错误优先的回调函数？" class="headerlink" title="什么是错误优先的回调函数？"></a>什么是错误优先的回调函数？</h3><p>错误优先的回调函数用于传递错误和数据。第一个参数始终应该是一个错误对象，<br>用于检查程序是否发生了错误。其余的参数用于传递数据。例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fs.readFile(filePath, function(err, data) &#123;  </span><br><span class="line">	if (err) &#123;</span><br><span class="line">		&#x2F;&#x2F;handle the error</span><br><span class="line">	&#125;</span><br><span class="line">	&#x2F;&#x2F; use the data object</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>解析：</strong>这个题目的主要作用在于检查被面试者对于Node中异步操作的一些基本知识的掌握。</p>
+<h3 id="如何避免回调地狱"><a href="#如何避免回调地狱" class="headerlink" title="如何避免回调地狱"></a>如何避免回调地狱</h3><p>你可以有如下几个方法：</p>
+<ul>
+<li>模块化：将回调函数分割为独立的函数</li>
+<li>使用Promises</li>
+<li>使用<code>yield</code>来计算生成器或Promise</li>
+</ul>
+<p><strong>解析：</strong>这个问题有很多种答案，取决你使用的场景，例如ES6, ES7，或者一些控制流库。</p>
+<h3 id="如何用Node监听80端口"><a href="#如何用Node监听80端口" class="headerlink" title="如何用Node监听80端口"></a>如何用Node监听80端口</h3><p>这题有陷阱！在类Unix系统中你不应该尝试去监听80端口，因为这需要超级用户权限。<br>因此不推荐让你的应用直接监听这个端口。</p>
+<p>目前，如果你一定要让你的应用监听80端口的话，你可以有通过在Node应用的前方再增加一层反向代理<br>（例如<a href="http://nginx.org/" target="_blank" rel="noopener">nginx</a>）来实现，如下图所示。否则，建议你直接监听大于1024的端口。</p>
+<blockquote>
+<p>方向代理指的是以代理服务器来接收Internet上的连接请求，然后将请求转发给内部网络上的服务器，<br>并且将服务器返回的结果发送给客户端。</p>
+</blockquote>
+<p>关于反向代理的更多内容，建议你阅读<a href="http://www.cnblogs.com/edisonchou/p/4126742.html" target="_blank" rel="noopener">这篇文章</a>。<br>关于如何利用nginx来为node配置方向代理的实践，可以参考<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04" target="_blank" rel="noopener">这篇博文</a>。</p>
+<p><strong>解释：</strong>这个问题用于检查被面试者是否有实际运行Node应用的经验。</p>
+<h3 id="什么是事件循环"><a href="#什么是事件循环" class="headerlink" title="什么是事件循环"></a>什么是事件循环</h3><p>Node采用的是单线程的处理机制（所有的I/O请求都采用非阻塞的工作方式），至少从Node.js开发者的角度是这样的。<br>而在底层，Node.js借助<a href="https://github.com/libuv/libuv" target="_blank" rel="noopener">libuv</a>来作为抽象封装层，<br>从而屏蔽不同操作系统的差异，Node可以借助livuv来来实现多线程。下图表示了Node和libuv的关系。</p>
+<p>!</p>
+<p>Libuv库负责Node API的执行。它将不同的任务分配给不同的线程，形成一个事件循环，<br>以异步的方式将任务的执行结果返回给V8引擎。</p>
+<p>每一个I/O都需要一个回调函数——一旦执行完便推到事件循环上用于执行。<br>如果你需要更多详细的解释，可以参考<a href="https://www.youtube.com/embed/8aGhZQkoFbQ" target="_blank" rel="noopener">这个视频</a>。<br>你也可以参考<a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" target="_blank" rel="noopener">这篇文章</a>。</p>
+<p><strong>解释：</strong>这用于检查Node.js的底层知识，例如什么是libuv，它的作用是什么。</p>
+<h3 id="哪些工具可以用来保证一致性的代码风格"><a href="#哪些工具可以用来保证一致性的代码风格" class="headerlink" title="哪些工具可以用来保证一致性的代码风格"></a>哪些工具可以用来保证一致性的代码风格</h3><p>你可以选择如下的工具：</p>
+<ul>
+<li><a href="http://jslint.com/" target="_blank" rel="noopener">JSLint</a></li>
+<li><a href="http://jshint.com/" target="_blank" rel="noopener">JSHint</a></li>
+<li><a href="http://eslint.org/" target="_blank" rel="noopener">ESLint</a></li>
+<li><a href="http://jscs.info/" target="_blank" rel="noopener">JSCS</a> - 推荐</li>
+</ul>
+<p>在团队开发中，这些工具对于编写代码非常的有帮助，能够帮助团队开发者强制执行规定的风格指南，<br>还能够通过静态分析捕获常见的错误。</p>
+<p><strong>解析：</strong>用于检查被面试者是否有大型项目开发经验。</p>
+<h3 id="运算错误与程序员错误的区别"><a href="#运算错误与程序员错误的区别" class="headerlink" title="运算错误与程序员错误的区别"></a>运算错误与程序员错误的区别</h3><p>运算错误并不是bug，这是和系统相关的问题，例如请求超时或者硬件故障。而程序员错误就是所谓的bug。</p>
+<p><strong>解析：</strong>这个题目和Node关系并不大，用于考察面试者的基础知识。</p>
+<h3 id="使用NPM有哪些好处？"><a href="#使用NPM有哪些好处？" class="headerlink" title="使用NPM有哪些好处？"></a>使用NPM有哪些好处？</h3><p>通过NPM，你可以安装和管理项目的依赖，并且能够指明依赖项的具体版本号。<br>对于Node应用开发而言，你可以通过<code>package.json</code>文件来管理项目信息，配置脚本，<br>以及指明项目依赖的具体版本。</p>
+<p>关于NPM的更多信息，你可以参考<a href="https://docs.npmjs.com/files/package.json" target="_blank" rel="noopener">官方文档</a>。</p>
+<p><strong>解析：</strong>它能考察面试者使用npm命令的基础知识和Node.js开发的实际经验。</p>
+<h3 id="什么是Stub？举个使用场景"><a href="#什么是Stub？举个使用场景" class="headerlink" title="什么是Stub？举个使用场景"></a>什么是Stub？举个使用场景</h3><p>Stub是用于<strong>模拟</strong>一个组件或模块的函数或程序。在测试用例中，<br>简单的说，你可以用Stub去模拟一个方法，从而避免调用真实的方法，<br>使用Stub你还可以返回虚构的结果。你可以配合断言使用Stub。</p>
+<p>举个例子，在一个读取文件的场景中，当你不想读取一个真正的文件时：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var fs &#x3D; require(&#39;fs&#39;);</span><br><span class="line"></span><br><span class="line">var readFileStub &#x3D; sinon.stub(fs, &#39;readFile&#39;, function (path, cb) &#123;  </span><br><span class="line">	return cb(null, &#39;filecontent&#39;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">expect(readFileStub).to.be.called;  </span><br><span class="line">readFileStub.restore();</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在单元测试中：Stub是完全模拟一个外部依赖，而Mock常用来判断测试通过还是失败。</p>
+</blockquote>
+<p>有关Node.js的单元测试小结，你可以参考<a href="http://segmentfault.com/a/1190000002921481" target="_blank" rel="noopener">这个链接</a>。</p>
+<p><strong>解析：</strong>用于测试被面试者是否有测试的经验。如果被面试者知道什么是Stub，<br>那么可以继续问他是如何做单元测试的。</p>
+<h3 id="什么是测试金字塔？"><a href="#什么是测试金字塔？" class="headerlink" title="什么是测试金字塔？"></a>什么是测试金字塔？</h3><p><a href="http://zyzhang.github.io/blog/2013/04/28/test-pyramid/" target="_blank" rel="noopener">测试金字塔</a>指的是：<br>当我们在编写测试用例时，底层的单元测试应该远比上层的端到端测试要多。</p>
+<p>当我们谈到HTTP API时，我们可能会涉及到：</p>
+<ul>
+<li>有很多针对模型的底层单元测试</li>
+<li>但你需要测试模型间如何交互时，需要减少集成测试</li>
+</ul>
+<p><strong>解析：</strong>本文主要考察被面试者的在测试方面的经验。</p>
+<h3 id="你最喜欢的HTTP框架以及原因"><a href="#你最喜欢的HTTP框架以及原因" class="headerlink" title="你最喜欢的HTTP框架以及原因"></a>你最喜欢的HTTP框架以及原因</h3><p>这题没有唯一的答案。本题主要考察被面试者对于他所使用的Node框架的理解程度，<br>考察他是否能够给出选择该框架的理由，优缺点等。常用的HTTP框架你可以参考<a href="http://nodeframework.com/index.html" target="_blank" rel="noopener">这个网站</a>。</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Sumind</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://sumind.cn/2017/07/12/Node%E5%9F%BA%E7%A1%80/">https://sumind.cn/2017/07/12/Node%E5%9F%BA%E7%A1%80/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://sumind.cn">Sumindの世界</a>！</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2017/07/12/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%20-%20CSS/"><i class="fa fa-chevron-left">  </i><span>前端知识 - CSS</span></a></div><div class="next-post pull-right"><a href="/2017/07/11/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%20-%20CSS%20BFC/"><span>前端知识 - CSS BFC</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(https://gitee.com/sumind/picCloud/raw/master/img/top_img.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2016 - 2020 By Sumind</div><div class="framework-info"><span> - I will be a front-end engineer with soul - </span></div><div class="footer_custom_text">hitokoto</div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.7.0"></script><script src="/js/fancybox.js?version=1.7.0"></script><script src="/js/sidebar.js?version=1.7.0"></script><script src="/js/copy.js?version=1.7.0"></script><script src="/js/fireworks.js?version=1.7.0"></script><script src="/js/transition.js?version=1.7.0"></script><script src="/js/scroll.js?version=1.7.0"></script><script src="/js/head.js?version=1.7.0"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"superSample":2,"width":210,"height":420,"position":"right","hOffset":0,"vOffset":-40},"log":false,"tagMode":false});</script></body></html><!-- 音频播放 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/aplayer/1.7.0/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="https://cdn.bootcss.com/aplayer/1.7.0/APlayer.min.js"></script>
+<script type="text/javascript" src="/js/music.js"></script>
+<script type="text/javascript" color="225,225,225" opacity='0.8' zIndex="-2" count="100" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>

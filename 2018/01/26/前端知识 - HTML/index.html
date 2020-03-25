@@ -1,0 +1,359 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="前端知识 - HTML"><meta name="keywords" content=""><meta name="author" content="Sumind"><meta name="copyright" content="Sumind"><title>前端知识 - HTML | Sumindの世界</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.7.0"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?version=1.7.0"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#前端知识-HTML"><span class="toc-number">1.</span> <span class="toc-text">前端知识 - HTML</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML"><span class="toc-number"></span> <span class="toc-text">HTML</span></a></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://gitee.com/sumind/picCloud/raw/master/img/Head-portrait.jpg"></div><div class="author-info__name text-center">Sumind</div><div class="author-info__description text-center">人生没有白走的路，每一步都算数</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">32</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">3</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://gitee.com/sumind/picCloud/raw/master/img/top_img.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Sumindの世界</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">主页</a><a class="site-page" href="/archives">时间轴</a><a class="site-page" href="/gallery">相册</a><a class="site-page" href="/about">关于我</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a></span></div><div id="post-info"><div id="post-title">前端知识 - HTML</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-26</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86/">小知识</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h5 id="前端知识-HTML"><a href="#前端知识-HTML" class="headerlink" title="前端知识 - HTML"></a>前端知识 - HTML</h5><p>JavaScript资料整理</p>
+<a id="more"></a>
+
+<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><hr>
+<p><strong>语义化</strong></p>
+<ul>
+<li>HTML标签的语义化是指：通过使用包含语义的标签（如h1-h6）恰当地表示文档结构</li>
+<li>css命名的语义化是指：为html标签添加有意义的class</li>
+<li>为什么需要语义化：<ul>
+<li>去掉样式后页面呈现清晰的结构</li>
+<li>盲人使用读屏器更好地阅读</li>
+<li>搜索引擎更好地理解页面，有利于收录</li>
+<li>便团队项目的可持续运作及维护</li>
+</ul>
+</li>
+</ul>
+<p><strong>简述一下你对HTML语义化的理解？</strong></p>
+<ul>
+<li>用正确的标签做正确的事情。</li>
+<li>html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析;</li>
+<li>即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的;</li>
+<li>搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO;</li>
+<li>使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解</li>
+</ul>
+<p><strong>Doctype作用？标准模式与兼容模式各有什么区别?</strong></p>
+<ul>
+<li><code>&lt;!DOCTYPE&gt;</code>声明位于位<code>于HTML</code>文档中的第一行，处于 <code>&lt;html&gt;</code> 标签之前。告知浏览器的解析器用什么文档标准解析这个文档。<code>DOCTYPE</code>不存在或格式不正确会导致文档以兼容模式呈现</li>
+<li>标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作</li>
+</ul>
+<p><strong>HTML5 为什么只需要写 <!DOCTYPE HTML>？</strong></p>
+<ul>
+<li>HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）</li>
+<li>而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型</li>
+</ul>
+<p><strong>行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</strong></p>
+<ul>
+<li>行内元素有：<code>a b span img input select strong</code>（强调的语气）</li>
+<li>块级元素有：<code>div ul ol li dl dt dd h1 h2 h3 h4…p</code></li>
+<li>常见的空元素:<code>&lt;br&gt; &lt;hr&gt; &lt;img&gt; &lt;input&gt; &lt;link&gt; &lt;meta&gt;</code></li>
+</ul>
+<p><strong>页面导入样式时，使用link和@import有什么区别？</strong></p>
+<ul>
+<li><code>link</code>属于<code>XHTML</code>标签，除了加载<code>CSS</code>外，还能用于定义<code>RSS</code>,定义<code>rel</code>连接属性等作用；而<code>@import</code>是<code>CSS</code>提供的，只能用于加载<code>CSS</code></li>
+<li>页面被加载的时，<code>link</code>会同时被加载，而<code>@import</code>引用的<code>CSS</code>会等到页面被加载完再加载</li>
+<li><code>import</code>是<code>CSS2.1</code> 提出的，只在<code>IE5</code>以上才能被识别，而<code>link</code>是<code>XHTML</code>标签，无兼容问题</li>
+</ul>
+<p><strong>介绍一下你对浏览器内核的理解？</strong></p>
+<ul>
+<li>主要分成两部分：渲染引擎(<code>layout engineer</code>或<code>Rendering Engine</code>)和<code>JS</code>引擎</li>
+<li>渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核</li>
+<li>JS引擎则：解析和执行javascript来实现网页的动态效果</li>
+<li>最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎</li>
+</ul>
+<p><strong>常见的浏览器内核有哪些？</strong></p>
+<ul>
+<li><code>Trident</code>内核：<code>IE,MaxThon,TT,The World,360</code>,搜狗浏览器等。[又称MSHTML]</li>
+<li><code>Gecko</code>内核：<code>Netscape6</code>及以上版本，<code>FF,MozillaSuite/SeaMonkey</code>等</li>
+<li><code>Presto</code>内核：<code>Opera7</code>及以上。      [<code>Opera</code>内核原为：Presto，现为：<code>Blink</code>;]</li>
+<li><code>Webkit</code>内核：<code>Safari,Chrome</code>等。   [ <code>Chrome</code>的<code>Blink</code>（<code>WebKit</code>的分支）]</li>
+</ul>
+<p><strong>html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？</strong></p>
+<ul>
+<li>HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加<ul>
+<li>绘画 canvas</li>
+<li>用于媒介回放的 video 和 audio 元素</li>
+<li>本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失</li>
+<li>sessionStorage 的数据在浏览器关闭后自动删除</li>
+<li>语意化更好的内容元素，比如 article、footer、header、nav、section</li>
+<li>表单控件，calendar、date、time、email、url、search</li>
+<li>新的技术webworker, websocket, Geolocation</li>
+</ul>
+</li>
+<li>移除的元素：<ul>
+<li>纯表现的元素：basefont，big，center，font, s，strike，tt，u</li>
+<li>对可用性产生负面影响的元素：frame，frameset，noframes</li>
+</ul>
+</li>
+<li>支持HTML5新标签：<ul>
+<li>IE8/IE7/IE6支持通过document.createElement方法产生的标签</li>
+<li>可以利用这一特性让这些浏览器支持HTML5新标签</li>
+<li>浏览器支持新标签后，还需要添加标签默认的样式</li>
+</ul>
+</li>
+<li>当然也可以直接使用成熟的框架、比如html5shim</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--[if lt IE 9]&gt;</span><br><span class="line">&lt;script&gt; src&#x3D;&quot;http:&#x2F;&#x2F;html5shim.googlecode.com</span><br><span class="line">&#x2F;svn&#x2F;trunk&#x2F;html5.js&quot;&lt;&#x2F;script&gt;&lt;![endif]--&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如何区分HTML5： DOCTYPE声明\新增的结构元素\功能元素</li>
+</ul>
+<p><strong>HTML5的离线储存怎么使用，工作原理能不能解释一下？</strong></p>
+<ul>
+<li>在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件</li>
+<li>原理：HTML5的离线存储是基于一个新建的.appcache文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示</li>
+<li>如何使用：<ul>
+<li>页面头部像下面一样加入一个manifest的属性；</li>
+<li>在cache.manifest文件的编写离线存储的资源</li>
+<li>在离线状态时，操作window.applicationCache进行需求实现</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line">    #v0.11</span><br><span class="line">    CACHE:</span><br><span class="line">    js&#x2F;app.js</span><br><span class="line">    css&#x2F;style.css</span><br><span class="line">    NETWORK:</span><br><span class="line">    resourse&#x2F;logo.png</span><br><span class="line">    FALLBACK:</span><br><span class="line">    &#x2F; &#x2F;offline.html</span><br></pre></td></tr></table></figure>
+
+<p><strong>浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？</strong></p>
+<ul>
+<li>在线的情况下，浏览器发现html头部有manifest属性，它会请求manifest文件，如果是第一次访问app，那么浏览器就会根据manifest文件的内容下载相应的资源并且进行离线存储。如果已经访问过app并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。</li>
+<li>离线的情况下，浏览器就直接使用离线存储的资源。</li>
+</ul>
+<p><strong>请描述一下 cookies，sessionStorage 和 localStorage 的区别？</strong></p>
+<ul>
+<li>cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）</li>
+<li>cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递</li>
+<li><code>sessionStorage</code>和<code>localStorage</code>不会自动把数据发给服务器，仅在本地保存</li>
+<li>存储大小：<ul>
+<li><code>cookie</code>数据大小不能超过4k</li>
+<li><code>sessionStorage</code>和<code>localStorage</code>虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大</li>
+</ul>
+</li>
+<li>有期时间：<ul>
+<li><code>localStorage</code> 存储持久数据，浏览器关闭后数据不丢失除非主动删除数据</li>
+<li><code>sessionStorage</code>  数据在当前浏览器窗口关闭后自动删除</li>
+<li><code>cookie</code>  设置的<code>cookie</code>过期时间之前一直有效，即使窗口或浏览器关闭</li>
+</ul>
+</li>
+</ul>
+<p><strong>iframe有那些缺点？</strong></p>
+<ul>
+<li>iframe会阻塞主页面的Onload事件</li>
+<li>搜索引擎的检索程序无法解读这种页面，不利于SEO</li>
+<li>iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载</li>
+<li>使用<code>iframe</code>之前需要考虑这两个缺点。如果需要使用<code>iframe</code>，最好是通过<code>javascript</code>动态给<code>iframe</code>添加<code>src</code>属性值，这样可以绕开以上两个问题</li>
+</ul>
+<p><strong>Label的作用是什么？是怎么用的？</strong></p>
+<ul>
+<li>label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件</li>
+</ul>
+<p><strong>HTML5的form如何关闭自动完成功能？</strong></p>
+<ul>
+<li>给不想要提示的 form 或某个 input 设置为 autocomplete=off。</li>
+</ul>
+<p><strong>如何实现浏览器内多个标签页之间的通信? (阿里)</strong></p>
+<ul>
+<li>WebSocket、SharedWorker</li>
+<li>也可以调用localstorge、cookies等本地存储方式</li>
+</ul>
+<p><strong>webSocket如何兼容低浏览器？(阿里)</strong></p>
+<ul>
+<li>Adobe Flash Socket 、</li>
+<li>ActiveX HTMLFile (IE) 、</li>
+<li>基于 multipart 编码发送 XHR 、</li>
+<li>基于长轮询的 XHR</li>
+</ul>
+<p><strong>页面可见性（Page Visibility API） 可以有哪些用途？</strong></p>
+<ul>
+<li>通过 visibilityState 的值检测页面当前是否可见，以及打开网页的时间等;</li>
+<li>在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放</li>
+</ul>
+<p><strong>如何在页面上实现一个圆形的可点击区域？</strong></p>
+<ul>
+<li>map+area或者svg</li>
+<li>border-radius</li>
+<li>纯js实现 需要求一个点在不在圆上简单算法、获取鼠标坐标等等</li>
+</ul>
+<p><strong>实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div style&#x3D;&quot;height:1px;overflow:hidden;background:red&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>网页验证码是干嘛的，是为了解决什么安全问题</strong></p>
+<ul>
+<li>区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水</li>
+<li>有效防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试</li>
+</ul>
+<p><strong>title与h1的区别、b与strong的区别、i与em的区别？</strong></p>
+<ul>
+<li><code>title</code>属性没有明确意义只表示是个标题，H1则表示层次明确的标题，对页面信息的抓取也有很大的影响<!-- - `strong`是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：<strong>会重读，而<B>是展示强调内容 --></li>
+<li>i内容展示为斜体，em表示强调的文本</li>
+</ul>
+<p><strong>页面导入样式时，使用 link 和 @import 有什么区别？</strong></p>
+<ul>
+<li>link 属于HTML标签，除了加载CSS外，还能用于定 RSS等；@import 只能用于加载CSS</li>
+<li>页面加载的时，link 会同时被加载，而 @import 引用的 CSS 会等到页面被加载完再加载</li>
+<li>@import 只在 IE5 以上才能被识别，而 link 是HTML标签，无兼容问题</li>
+</ul>
+<p><strong>介绍一下你对浏览器内核的理解？</strong></p>
+<ul>
+<li>浏览器内核主要分为两部分：渲染引擎(layout engineer 或 Rendering Engine) 和 JS引擎</li>
+<li>渲染引擎负责取得网页的内容进行布局计和样式渲染，然后会输出至显示器或打印机</li>
+<li>JS引擎则负责解析和执行JS脚本来实现网页的动态效果和用户交互</li>
+<li>最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎</li>
+</ul>
+<p><strong>常见的浏览器内核有哪些？</strong></p>
+<ul>
+<li>Blink内核：新版 Chrome、新版 Opera</li>
+<li>Webkit内核：Safari、原Chrome</li>
+<li>Gecko内核：FireFox、Netscape6及以上版本</li>
+<li>Trident内核（又称MSHTML内核）：IE、国产浏览器</li>
+<li>Presto内核：原Opera7及以上</li>
+</ul>
+<p><strong>HTML5有哪些新特性？</strong></p>
+<ul>
+<li>新增选择器 document.querySelector、document.querySelectorAll</li>
+<li>拖拽释放(Drag and drop) API</li>
+<li>媒体播放的 video 和 audio</li>
+<li>本地存储 localStorage 和 sessionStorage</li>
+<li>离线应用 manifest</li>
+<li>桌面通知 Notifications</li>
+<li>语意化标签 article、footer、header、nav、section</li>
+<li>增强表单控件 calendar、date、time、email、url、search</li>
+<li>地理位置 Geolocation</li>
+<li>多任务 webworker</li>
+<li>全双工通信协议 websocket</li>
+<li>历史管理 history</li>
+<li>跨域资源共享(CORS) Access-Control-Allow-Origin</li>
+<li>页面可见性改变事件 visibilitychange</li>
+<li>跨窗口通信 PostMessage</li>
+<li>Form Data 对象</li>
+<li>绘画 canvas</li>
+</ul>
+<p><strong>HTML5移除了那些元素？</strong></p>
+<ul>
+<li>纯表现的元素：basefont、big、center、font、s、strike、tt、u</li>
+<li>对可用性产生负面影响的元素：frame、frameset、noframes</li>
+</ul>
+<p><strong>如何处理HTML5新标签的浏览器兼容问题？</strong></p>
+<ul>
+<li>通过 document.createElement 创建新标签</li>
+<li>使用垫片 html5shiv.js</li>
+</ul>
+<p><strong>如何区分 HTML 和 HTML5？</strong></p>
+<ul>
+<li>DOCTYPE声明、新增的结构元素、功能元素</li>
+</ul>
+<p><strong>HTML5的离线储存工作原理能不能解释一下，怎么使用？</strong></p>
+<ul>
+<li>HTML5的离线储存原理：<ul>
+<li>用户在线时，保存更新用户机器上的缓存文件；当用户离线时，可以正常访离线储存问站点或应用内容</li>
+</ul>
+</li>
+<li>HTML5的离线储存使用：<ul>
+<li>在文档的 html 标签设置 manifest 属性，如 manifest=”/offline.appcache”</li>
+<li>在项目中新建 manifest 文件，manifest 文件的命名建议：xxx.appcache</li>
+<li>在 web 服务器配置正确的 MIME-type，即 text/cache-manifest</li>
+</ul>
+</li>
+</ul>
+<p><strong>浏览器是怎么对HTML5的离线储存资源进行管理和加载的？</strong></p>
+<ul>
+<li>在线的情况下，浏览器发现 html 标签有 manifest 属性，它会请求 manifest 文件</li>
+<li>如果是第一次访问app，那么浏览器就会根据 manifest 文件的内容下载相应的资源并且进行离线存储</li>
+<li>如果已经访问过app且资源已经离线存储了，浏览器会对比新的 manifest 文件与旧的 manifest 文件，如果文件没有发生改变，就不做任何操作。如果文件改变了，那么就会重新下载文件中的资源并进行离线存储</li>
+<li>离线的情况下，浏览器就直接使用离线存储的资源。</li>
+</ul>
+<p><strong>iframe 有那些优点和缺点？</strong></p>
+<ul>
+<li>优点：<ul>
+<li>用来加载速度较慢的内容（如广告）</li>
+<li>可以使脚本可以并行下载</li>
+<li>可以实现跨子域通信</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>iframe 会阻塞主页面的 onload 事件</li>
+<li>无法被一些搜索引擎索识别</li>
+<li>会产生很多页面，不容易管理</li>
+</ul>
+</li>
+</ul>
+<p><strong>label 的作用是什么？怎么使用的？</strong></p>
+<ul>
+<li>label标签来定义表单控件的关系：<ul>
+<li>当用户选择label标签时，浏览器会自动将焦点转到和label标签相关的表单控件上</li>
+</ul>
+</li>
+<li>使用方法1：<ul>
+<li><code>&lt;label for=&quot;mobile&quot;&gt;Number:&lt;/label&gt;</code></li>
+<li><code>&lt;input type=&quot;text&quot; id=&quot;mobile&quot;/&gt;</code></li>
+</ul>
+</li>
+<li>使用方法2：<ul>
+<li><code>&lt;label&gt;Date:&lt;input type=&quot;text&quot;/&gt;&lt;/label&gt;</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>如何实现浏览器内多个标签页之间的通信？</strong></p>
+<ul>
+<li>iframe + contentWindow</li>
+<li>postMessage</li>
+<li>SharedWorker(Web Worker API)</li>
+<li>storage 事件(localStorge API)</li>
+<li>WebSocket</li>
+</ul>
+<p><strong>webSocket 如何兼容低浏览器？</strong></p>
+<ul>
+<li>Adobe Flash Socket</li>
+<li>ActiveX HTMLFile (IE)</li>
+<li>基于 multipart 编码发送 XHR</li>
+<li>基于长轮询的 XHR</li>
+</ul>
+<p><strong>页面可见性（Page Visibility API） 可以有哪些用途？</strong></p>
+<ul>
+<li>在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放</li>
+<li>当用户浏览其他页面，暂停网站首页幻灯自动播放</li>
+<li>完成登陆后，无刷新自动同步其他页面的登录状态</li>
+</ul>
+<p><strong>title 与 h1 的区别、b 与 strong 的区别、i 与 em 的区别？</strong></p>
+<ul>
+<li>title 表示是整个页面标题，h1 则表示层次明确的标题，对页面信息的抓取有很大的影响</li>
+<li>strong 标明重点内容，有语气加强的含义，使用阅读设备阅读网络时，strong 会重读，而 b </li>
+</ul>
+<p><strong>是展示强调内容</strong></p>
+<ul>
+<li>i 内容展示为斜体，em 表示强调的文本</li>
+<li>自然样式标签：b, i, u, s, pre</li>
+<li>语义样式标签：strong, em, ins, del, code</li>
+<li>应该准确使用语义样式标签, 但不能滥用。如果不能确定时，首选使用自然样式标签</li>
+</ul>
+<p>html5有哪些新特性、移除了那些元素？</p>
+<ul>
+<li><code>HTML5</code> 现在已经不是 <code>SGML</code> 的子集，主要是关于图像，位置，存储，多任务等功能的增加<ul>
+<li>绘画 <code>canvas</code></li>
+<li>用于媒介回放的 <code>video</code> 和 <code>audio</code> 元素</li>
+<li>本地离线存储 <code>localStorage</code> 长期存储数据，浏览器关闭后数据不丢失</li>
+<li><code>sessionStorage</code> 的数据在浏览器关闭后自动删除</li>
+<li>语意化更好的内容元素，比如<code>article</code>、<code>footer</code>、<code>header</code>、<code>nav</code>、<code>section</code></li>
+<li>表单控件，<code>calendar</code>、<code>date</code>、<code>time</code>、<code>email</code>、<code>url</code>、<code>search</code></li>
+<li>新的技术<code>webworker</code>、 <code>websocket</code>、 <code>Geolocation</code></li>
+</ul>
+</li>
+<li>移除的元素：<ul>
+<li>纯表现的元素：<code>basefont</code>、<code>big</code>、<code>center</code>、<code>font</code>、 <code>s</code>、<code>strike</code>、<code>tt</code>、<code>u</code></li>
+<li>对可用性产生负面影响的元素：<code>frame</code>、<code>frameset</code>、<code>noframes</code></li>
+</ul>
+</li>
+<li>支持<code>HTML5</code>新标签：<ul>
+<li><code>IE8/IE7/IE6</code>支持通过<code>document.createElement</code>方法产生的标签</li>
+<li>可以利用这一特性让这些浏览器支持<code>HTML5</code>新标签</li>
+<li>浏览器支持新标签后，还需要添加标签默认的样式</li>
+</ul>
+</li>
+<li>当然也可以直接使用成熟的框架、比如<code>html5shim</code></li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Sumind</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://sumind.cn/2018/01/26/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%20-%20HTML/">https://sumind.cn/2018/01/26/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%20-%20HTML/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://sumind.cn">Sumindの世界</a>！</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2018/03/20/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%20-%20%E5%A4%8D%E4%B9%A0/"><i class="fa fa-chevron-left">  </i><span>前端基础 - 复习</span></a></div><div class="next-post pull-right"><a href="/2018/01/23/JavaScript%E7%9F%A5%E8%AF%86%20-%20HTTP%E5%8D%8F%E8%AE%AE/"><span>JavaScript知识 - HTTP协议</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(https://gitee.com/sumind/picCloud/raw/master/img/top_img.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2016 - 2020 By Sumind</div><div class="framework-info"><span> - I will be a front-end engineer with soul - </span></div><div class="footer_custom_text">hitokoto</div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.7.0"></script><script src="/js/fancybox.js?version=1.7.0"></script><script src="/js/sidebar.js?version=1.7.0"></script><script src="/js/copy.js?version=1.7.0"></script><script src="/js/fireworks.js?version=1.7.0"></script><script src="/js/transition.js?version=1.7.0"></script><script src="/js/scroll.js?version=1.7.0"></script><script src="/js/head.js?version=1.7.0"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"superSample":2,"width":210,"height":420,"position":"right","hOffset":0,"vOffset":-40},"log":false,"tagMode":false});</script></body></html><!-- 音频播放 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/aplayer/1.7.0/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="https://cdn.bootcss.com/aplayer/1.7.0/APlayer.min.js"></script>
+<script type="text/javascript" src="/js/music.js"></script>
+<script type="text/javascript" color="225,225,225" opacity='0.8' zIndex="-2" count="100" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
