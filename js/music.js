@@ -1,6 +1,6 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
-    // mini:true,
+    mini:true,
     autoplay: true,
     audio: [
       {
@@ -17,5 +17,5 @@ const ap = new APlayer({
       }
     ],
 });
-document.getElementById('aplayer').setAttribute('style', 'position: fixed;left: 50px;bottom: 80px;z-index: 99999;')
+document.getElementById('aplayer').setAttribute('style', 'position: fixed;left: 1rem;bottom: 2rem;z-index: 99999;')
 
